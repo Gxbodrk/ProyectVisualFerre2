@@ -102,7 +102,10 @@ namespace ProyectVisualFerre
         private void btn_salir_Click(object sender, EventArgs e)
         {
             //aqui poner para regresar al login
-            Application.Exit();
+            //Application.Exit();
+            Login log = new Login();
+            log.Show();
+            this.Hide();
         }
         //FIN SALIR
 
