@@ -75,6 +75,7 @@ namespace ProyectVisualFerre
             this.pl_barra_superior.Name = "pl_barra_superior";
             this.pl_barra_superior.Size = new System.Drawing.Size(1000, 30);
             this.pl_barra_superior.TabIndex = 0;
+            this.pl_barra_superior.Paint += new System.Windows.Forms.PaintEventHandler(this.pl_barra_superior_Paint);
             this.pl_barra_superior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pl_barra_superior_MouseDown);
             // 
             // btn_max
