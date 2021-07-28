@@ -22,6 +22,7 @@ namespace ProyectVisualFerre
         private void Ventana_admin_Load(object sender, EventArgs e)
         {
             //btn_inicio_logo(null ,e);
+            
         }
         //FIN LOAD
 
