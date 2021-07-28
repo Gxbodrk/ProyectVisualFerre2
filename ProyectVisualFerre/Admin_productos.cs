@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectVisualFerre
 {
-    public partial class Admin_productos : Form
+    public partial class Admin_Productos : Form
     {
-        public Admin_productos()
+        public Admin_Productos()
         {
             InitializeComponent();
         }
@@ -27,7 +27,7 @@ namespace ProyectVisualFerre
         //Boton nuevo producto
         private void btn_mant_nuevo_Click(object sender, EventArgs e)
         {
-            Admin_FormCrearEditar frm_crear = new Admin_FormCrearEditar();
+            admin_FormCrearEditar frm_crear = new admin_FormCrearEditar();
             frm_crear.ShowDialog();
         }
         //fin boton crear producto
@@ -35,7 +35,7 @@ namespace ProyectVisualFerre
         //boton editar producto
         private void btn_mant_editar_Click(object sender, EventArgs e)
         {
-            Admin_FormCrearEditar frm_editar = new Admin_FormCrearEditar();
+            admin_FormCrearEditar frm_editar = new admin_FormCrearEditar();
             
             if (dgv_admin_productos.SelectedRows.Count > 0)
             {
@@ -43,9 +43,23 @@ namespace ProyectVisualFerre
             }
             else
             {
-                MessageBox.Show("Seleccione una fila para poder editar");
+                MessageBox.Show("Seleccione una fila para poder editar el producto");
             }
         }
         //fin boton editar producto
+
+        //Boton eliminar producto
+        private void btn_prod_eliminar_Click(object sender, EventArgs e)
+        {
+            if (dgv_admin_productos.SelectedRows.Count > 0)
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una fila para poder eliminar el producto");
+            }
+        }
+        //fin boton eliminar producto
     }
 }

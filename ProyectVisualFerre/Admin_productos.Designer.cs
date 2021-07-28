@@ -1,7 +1,7 @@
 ﻿
 namespace ProyectVisualFerre
 {
-    partial class Admin_productos
+    partial class Admin_Productos
     {
         /// <summary>
         /// Required designer variable.
@@ -29,19 +29,22 @@ namespace ProyectVisualFerre
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_Productos));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgv_admin_productos = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_prod_eliminar = new System.Windows.Forms.Button();
             this.btn_mant_editar = new System.Windows.Forms.Button();
             this.btn_mant_nuevo = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_admin_productos)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -84,7 +87,8 @@ namespace ProyectVisualFerre
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.btn_prod_eliminar);
             this.panel2.Controls.Add(this.btn_mant_editar);
             this.panel2.Controls.Add(this.btn_mant_nuevo);
             this.panel2.Location = new System.Drawing.Point(604, 196);
@@ -92,19 +96,20 @@ namespace ProyectVisualFerre
             this.panel2.Size = new System.Drawing.Size(143, 357);
             this.panel2.TabIndex = 3;
             // 
-            // button3
+            // btn_prod_eliminar
             // 
-            this.button3.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(27, 135);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 31);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_prod_eliminar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_prod_eliminar.FlatAppearance.BorderSize = 0;
+            this.btn_prod_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_prod_eliminar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_prod_eliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_prod_eliminar.Location = new System.Drawing.Point(27, 135);
+            this.btn_prod_eliminar.Name = "btn_prod_eliminar";
+            this.btn_prod_eliminar.Size = new System.Drawing.Size(90, 31);
+            this.btn_prod_eliminar.TabIndex = 2;
+            this.btn_prod_eliminar.Text = "Eliminar";
+            this.btn_prod_eliminar.UseVisualStyleBackColor = false;
+            this.btn_prod_eliminar.Click += new System.EventHandler(this.btn_prod_eliminar_Click);
             // 
             // btn_mant_editar
             // 
@@ -155,6 +160,16 @@ namespace ProyectVisualFerre
             this.textBox1.Size = new System.Drawing.Size(411, 22);
             this.textBox1.TabIndex = 5;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(17, 222);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(110, 110);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // Admin_productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,6 +189,7 @@ namespace ProyectVisualFerre
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_admin_productos)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,10 +202,11 @@ namespace ProyectVisualFerre
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgv_admin_productos;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_prod_eliminar;
         private System.Windows.Forms.Button btn_mant_editar;
         private System.Windows.Forms.Button btn_mant_nuevo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
