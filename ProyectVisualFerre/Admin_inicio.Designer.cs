@@ -1,7 +1,7 @@
 ﻿
 namespace ProyectVisualFerre
 {
-    partial class Admin_inicio
+    partial class Admin_Inicio
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace ProyectVisualFerre
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_inicio));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_Inicio));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -99,7 +99,7 @@ namespace ProyectVisualFerre
             this.tm_hora_fecha.Interval = 1000;
             this.tm_hora_fecha.Tick += new System.EventHandler(this.tm_hora_fecha_Tick);
             // 
-            // Admin_inicio
+            // Admin_Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -111,10 +111,9 @@ namespace ProyectVisualFerre
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Admin_inicio";
+            this.Name = "Admin_Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin_inicio";
-            this.Load += new System.EventHandler(this.Admin_inicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

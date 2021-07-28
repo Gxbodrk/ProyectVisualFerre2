@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectVisualFerre
 {
-    public partial class Admin_inicio : Form
+    public partial class Admin_Inicio : Form
     {
-        public Admin_inicio()
+        public Admin_Inicio()
         {
             InitializeComponent();
         }
@@ -23,12 +23,10 @@ namespace ProyectVisualFerre
             lbl_fecha.Text = DateTime.Now.ToString("dddd MMMM yyy");
         }
 
-        private void Admin_inicio_Load(object sender, EventArgs e)
+        private void Admin_Inicio_Load(object sender, EventArgs e)
         {
             lbl_hora.Text = DateTime.Now.ToString("HH:mm:ss");
             lbl_fecha.Text = DateTime.Now.ToString("dddd MMMM yyy");
         }
-
-        
     }
 }
