@@ -105,14 +105,14 @@ namespace ProyectVisualFerre
         private void btn_ingresar_Click(object sender, EventArgs e)
         {
             Ventana_admin admin = new Ventana_admin();
-            admin.ShowDialog();
+            admin.Show();
             this.Hide();
         }
 
         private void lkl_regis_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Registrarse_Usuario registrarse = new Registrarse_Usuario();
-            registrarse.ShowDialog();
+            registrarse.Show();
             this.Hide();
         }
     }

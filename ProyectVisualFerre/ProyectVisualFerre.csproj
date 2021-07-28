@@ -123,6 +123,9 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Registrarse_Usuario.resx">
+      <DependentUpon>Registrarse_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ventana_admin.resx">
       <DependentUpon>Ventana_admin.cs</DependentUpon>
     </EmbeddedResource>
