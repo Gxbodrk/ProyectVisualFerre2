@@ -78,9 +78,8 @@ namespace ProyectVisualFerre
             this.lbl_hora.ForeColor = System.Drawing.Color.White;
             this.lbl_hora.Location = new System.Drawing.Point(234, 344);
             this.lbl_hora.Name = "lbl_hora";
-            this.lbl_hora.Size = new System.Drawing.Size(249, 91);
+            this.lbl_hora.Size = new System.Drawing.Size(0, 91);
             this.lbl_hora.TabIndex = 3;
-            this.lbl_hora.Text = "label2";
             // 
             // lbl_fecha
             // 
@@ -89,9 +88,8 @@ namespace ProyectVisualFerre
             this.lbl_fecha.ForeColor = System.Drawing.Color.PaleTurquoise;
             this.lbl_fecha.Location = new System.Drawing.Point(242, 435);
             this.lbl_fecha.Name = "lbl_fecha";
-            this.lbl_fecha.Size = new System.Drawing.Size(126, 46);
+            this.lbl_fecha.Size = new System.Drawing.Size(0, 46);
             this.lbl_fecha.TabIndex = 4;
-            this.lbl_fecha.Text = "label2";
             // 
             // tm_hora_fecha
             // 
@@ -126,8 +124,8 @@ namespace ProyectVisualFerre
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbl_hora;
-        private System.Windows.Forms.Label lbl_fecha;
         private System.Windows.Forms.Timer tm_hora_fecha;
+        public System.Windows.Forms.Label lbl_hora;
+        public System.Windows.Forms.Label lbl_fecha;
     }
 }

@@ -50,6 +50,8 @@ namespace ProyectVisualFerre
             this.pl_contenedor = new System.Windows.Forms.Panel();
             this.pl_barra_titulo = new System.Windows.Forms.Panel();
             this.btn_menu_slide = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pl_barra_superior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_max)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_minimizar)).BeginInit();
@@ -133,6 +135,8 @@ namespace ProyectVisualFerre
             // pl_menu_izq
             // 
             this.pl_menu_izq.BackColor = System.Drawing.Color.Teal;
+            this.pl_menu_izq.Controls.Add(this.panel5);
+            this.pl_menu_izq.Controls.Add(this.button1);
             this.pl_menu_izq.Controls.Add(this.panel4);
             this.pl_menu_izq.Controls.Add(this.btn_admin_ventas);
             this.pl_menu_izq.Controls.Add(this.panel3);
@@ -321,6 +325,31 @@ namespace ProyectVisualFerre
             this.btn_menu_slide.TabStop = false;
             this.btn_menu_slide.Click += new System.EventHandler(this.btn_menu_slide_Click);
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel5.Location = new System.Drawing.Point(1, 273);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(5, 35);
+            this.panel5.TabIndex = 14;
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(4, 273);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(216, 35);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Proveedores";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Ventana_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -372,6 +401,8 @@ namespace ProyectVisualFerre
         private System.Windows.Forms.Button btn_admin_ventas;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btn_admin_estadi;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button button1;
     }
 }
 
