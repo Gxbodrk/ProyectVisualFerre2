@@ -67,6 +67,16 @@ namespace ProyectVisualFerre
 
         }
 
-        
+        private void btn_registrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }
