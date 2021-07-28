@@ -82,6 +82,12 @@
     <Compile Include="Admin_Productos.Designer.cs">
       <DependentUpon>Admin_Productos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ventana_admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_Productos.resx">
       <DependentUpon>Admin_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventana_admin.resx">
       <DependentUpon>Ventana_admin.cs</DependentUpon>
