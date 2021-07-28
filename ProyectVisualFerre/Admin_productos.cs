@@ -36,15 +36,16 @@ namespace ProyectVisualFerre
         private void btn_mant_editar_Click(object sender, EventArgs e)
         {
             admin_FormCrearEditar frm_editar = new admin_FormCrearEditar();
-            
-            if (dgv_admin_productos.SelectedRows.Count > 0)
-            {
+            frm_editar.ShowDialog();
 
-            }
-            else
-            {
-                MessageBox.Show("Seleccione una fila para poder editar el producto");
-            }
+            //if (dgv_admin_productos.SelectedRows.Count > 0)
+            //{
+
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Seleccione una fila para poder editar el producto");
+            //}
         }
         //fin boton editar producto
 
