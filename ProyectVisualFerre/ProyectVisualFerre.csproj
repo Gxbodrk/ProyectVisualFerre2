@@ -65,6 +65,12 @@
     <Compile Include="admin_FormClientesEditar.Designer.cs">
       <DependentUpon>admin_FormClientesEditar.cs</DependentUpon>
     </Compile>
+    <Compile Include="admin_FormComprobanteVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_FormComprobanteVenta.Designer.cs">
+      <DependentUpon>admin_FormComprobanteVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="admin_FormCrearEditar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,12 @@
     </Compile>
     <Compile Include="Admin_Productos.Designer.cs">
       <DependentUpon>Admin_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Ventas.Designer.cs">
+      <DependentUpon>Admin_Ventas.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -112,6 +124,9 @@
     <EmbeddedResource Include="admin_FormClientesEditar.resx">
       <DependentUpon>admin_FormClientesEditar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="admin_FormComprobanteVenta.resx">
+      <DependentUpon>admin_FormComprobanteVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="admin_FormCrearEditar.resx">
       <DependentUpon>admin_FormCrearEditar.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_Productos.resx">
       <DependentUpon>Admin_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Ventas.resx">
+      <DependentUpon>Admin_Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

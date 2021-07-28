@@ -145,13 +145,10 @@ namespace ProyectVisualFerre
             Abrir_form_hija(new Admin_Estadisticas());
         }
         //FIN BOTON ADMIN ESTADISTICAS
-        private void pl_barra_superior_Paint(object sender, PaintEventArgs e)
+
+        private void btn_admin_ventas_Click(object sender, EventArgs e)
         {
-
+            Abrir_form_hija(new Admin_Ventas());
         }
-        
-
-
-
     }
 }
