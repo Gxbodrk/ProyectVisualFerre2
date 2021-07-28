@@ -70,6 +70,19 @@ namespace ProyectVisualFerre
 
         //FIN PANEL SUPERIOR
 
+        //BOTONES IMAGEN INICIO
+        //Imagen ferre
+        private void btn_inicio_ferre_Click(object sender, EventArgs e)
+        {
+            Abrir_form_hija(new Admin_Inicio());
+        }
+        //Imagen logo
+        private void btn_inicio_logo_Click(object sender, EventArgs e)
+        {
+            Abrir_form_hija(new Admin_Inicio());
+        }
+        //FIN BOTONES INICIO
+
         //mostrar menu
         private void btn_menu_slide_Click(object sender, EventArgs e)
         {
@@ -110,28 +123,29 @@ namespace ProyectVisualFerre
         }
         //FIN FUNCION
 
-        //BOTON PRODUCTOS
+        //BOTON ADMIN PRODUCTOS
         private void btn_admin_prod_Click(object sender, EventArgs e)
         {
             //llamar a la funcion y envimos como parametro declarando un nuevo objeto 
-            Abrir_form_hija(new Admin_productos());
+            Abrir_form_hija(new Admin_Productos());
         }
-        //FIN BOTON PRODUCTOS
+        //FIN ADMIN BOTON PRODUCTOS
 
-        //BOTONES IMAGEN INICIO
-        //Imagen ferre
-        private void btn_inicio_ferre_Click(object sender, EventArgs e)
+        //BOTON ADMIN CLIENTES
+        private void btn_admin_clt_Click(object sender, EventArgs e)
         {
-            Abrir_form_hija(new Admin_inicio());
+            Abrir_form_hija(new Admin_Clientes());
         }
-        //Imagen logo
-        private void btn_inicio_logo_Click(object sender, EventArgs e)
-        {
-            Abrir_form_hija(new Admin_inicio());
-        }
+        //FIN BOTON ADMIN CLIENTES
 
-        
-        //FIN BOTONES INICIO
+        //BOTON ADMIN ESTADISTICAS
+        private void btn_admin_estadi_Click(object sender, EventArgs e)
+        {
+            Abrir_form_hija(new Admin_Estadisticas());
+        }
+        //FIN BOTON ADMIN ESTADISTICAS
+
+       
 
     }
 }

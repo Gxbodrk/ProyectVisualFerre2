@@ -198,6 +198,7 @@ namespace ProyectVisualFerre
             this.btn_admin_estadi.TabIndex = 9;
             this.btn_admin_estadi.Text = "Estadísticas";
             this.btn_admin_estadi.UseVisualStyleBackColor = true;
+            this.btn_admin_estadi.Click += new System.EventHandler(this.btn_admin_estadi_Click);
             // 
             // panel2
             // 
@@ -223,6 +224,7 @@ namespace ProyectVisualFerre
             this.btn_admin_clt.TabIndex = 7;
             this.btn_admin_clt.Text = "Clientes";
             this.btn_admin_clt.UseVisualStyleBackColor = true;
+            this.btn_admin_clt.Click += new System.EventHandler(this.btn_admin_clt_Click);
             // 
             // btn_salir
             // 

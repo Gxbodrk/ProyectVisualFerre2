@@ -46,23 +46,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin_FormCrearEditar.cs">
+    <Compile Include="Admin_Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_FormCrearEditar.Designer.cs">
-      <DependentUpon>Admin_FormCrearEditar.cs</DependentUpon>
+    <Compile Include="Admin_Clientes.Designer.cs">
+      <DependentUpon>Admin_Clientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_inicio.cs">
+    <Compile Include="Admin_Estadisticas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_inicio.Designer.cs">
-      <DependentUpon>Admin_inicio.cs</DependentUpon>
+    <Compile Include="Admin_Estadisticas.Designer.cs">
+      <DependentUpon>Admin_Estadisticas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_productos.cs">
+    <Compile Include="admin_FormClientesEditar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_productos.Designer.cs">
-      <DependentUpon>Admin_productos.cs</DependentUpon>
+    <Compile Include="admin_FormClientesEditar.Designer.cs">
+      <DependentUpon>admin_FormClientesEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_FormCrearEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_FormCrearEditar.Designer.cs">
+      <DependentUpon>admin_FormCrearEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Inicio.Designer.cs">
+      <DependentUpon>Admin_Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Productos.Designer.cs">
+      <DependentUpon>Admin_Productos.cs</DependentUpon>
     </Compile>
     <Compile Include="Ventana_admin.cs">
       <SubType>Form</SubType>
@@ -72,14 +90,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Admin_FormCrearEditar.resx">
-      <DependentUpon>Admin_FormCrearEditar.cs</DependentUpon>
+    <EmbeddedResource Include="Admin_Clientes.resx">
+      <DependentUpon>Admin_Clientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_inicio.resx">
-      <DependentUpon>Admin_inicio.cs</DependentUpon>
+    <EmbeddedResource Include="Admin_Estadisticas.resx">
+      <DependentUpon>Admin_Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_productos.resx">
-      <DependentUpon>Admin_productos.cs</DependentUpon>
+    <EmbeddedResource Include="admin_FormClientesEditar.resx">
+      <DependentUpon>admin_FormClientesEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_FormCrearEditar.resx">
+      <DependentUpon>admin_FormCrearEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Inicio.resx">
+      <DependentUpon>Admin_Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Productos.resx">
+      <DependentUpon>Admin_Productos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventana_admin.resx">
       <DependentUpon>Ventana_admin.cs</DependentUpon>
