@@ -38,14 +38,14 @@ namespace ProyectVisualFerre
             admin_FormClientesEditar frm_editar_clt = new admin_FormClientesEditar();
             frm_editar_clt.ShowDialog();
 
-            //if (dgv_admin_clientes.SelectedRows.Count > 0)
-            //{
+            if (dgv_admin_clientes.SelectedRows.Count > 0)
+            {
 
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Seleccione una fila para poder editar un usuario");
-            //}
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una fila para poder editar un usuario");
+            }
         }
         //Fin boton editar cliente
 

@@ -38,14 +38,14 @@ namespace ProyectVisualFerre
             admin_FormCrearEditar frm_editar = new admin_FormCrearEditar();
             frm_editar.ShowDialog();
 
-            //if (dgv_admin_productos.SelectedRows.Count > 0)
-            //{
+            if (dgv_admin_productos.SelectedRows.Count > 0)
+            {
 
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Seleccione una fila para poder editar el producto");
-            //}
+            }
+            else
+            {
+                MessageBox.Show("Seleccione una fila para poder editar el producto");
+            }
         }
         //fin boton editar producto
 

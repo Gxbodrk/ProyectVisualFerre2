@@ -63,7 +63,7 @@ namespace ProyectVisualFerre
 
         //FIN PANEL SUPERIOR
 
-        //Limpia las lestras de la vista
+        //Limpia las letras de la vista
         private void txt_usu_Enter(object sender, EventArgs e)
         {
             if (txt_usu.Text == "Usuario")
