@@ -49,11 +49,11 @@ namespace ProyectVisualFerre
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dgv_comp_vent = new System.Windows.Forms.DataGridView();
+            this.txt_BuscarComp = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btn_vent_comprobElim = new System.Windows.Forms.Button();
             this.btn_vent_comprobvi = new System.Windows.Forms.Button();
-            this.dgv_comp_vent = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -229,7 +229,7 @@ namespace ProyectVisualFerre
             // panel5
             // 
             this.panel5.Controls.Add(this.dgv_comp_vent);
-            this.panel5.Controls.Add(this.textBox1);
+            this.panel5.Controls.Add(this.txt_BuscarComp);
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.btn_vent_comprobElim);
             this.panel5.Controls.Add(this.btn_vent_comprobvi);
@@ -238,55 +238,6 @@ namespace ProyectVisualFerre
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(702, 300);
             this.panel5.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(172, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(344, 22);
-            this.textBox1.TabIndex = 47;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(4, 45);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(148, 16);
-            this.label9.TabIndex = 46;
-            this.label9.Text = "Buscar comprobante:";
-            // 
-            // btn_vent_comprobElim
-            // 
-            this.btn_vent_comprobElim.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btn_vent_comprobElim.FlatAppearance.BorderSize = 0;
-            this.btn_vent_comprobElim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_vent_comprobElim.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_vent_comprobElim.ForeColor = System.Drawing.Color.White;
-            this.btn_vent_comprobElim.Location = new System.Drawing.Point(564, 205);
-            this.btn_vent_comprobElim.Name = "btn_vent_comprobElim";
-            this.btn_vent_comprobElim.Size = new System.Drawing.Size(109, 31);
-            this.btn_vent_comprobElim.TabIndex = 45;
-            this.btn_vent_comprobElim.Text = "Eliminar";
-            this.btn_vent_comprobElim.UseVisualStyleBackColor = false;
-            this.btn_vent_comprobElim.Click += new System.EventHandler(this.btn_vent_comprobElim_Click);
-            // 
-            // btn_vent_comprobvi
-            // 
-            this.btn_vent_comprobvi.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btn_vent_comprobvi.FlatAppearance.BorderSize = 0;
-            this.btn_vent_comprobvi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_vent_comprobvi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_vent_comprobvi.ForeColor = System.Drawing.Color.White;
-            this.btn_vent_comprobvi.Location = new System.Drawing.Point(564, 129);
-            this.btn_vent_comprobvi.Name = "btn_vent_comprobvi";
-            this.btn_vent_comprobvi.Size = new System.Drawing.Size(109, 54);
-            this.btn_vent_comprobvi.TabIndex = 44;
-            this.btn_vent_comprobvi.Text = "Visualizar comprobante";
-            this.btn_vent_comprobvi.UseVisualStyleBackColor = false;
-            this.btn_vent_comprobvi.Click += new System.EventHandler(this.btn_vent_comprobvi_Click);
             // 
             // dgv_comp_vent
             // 
@@ -328,6 +279,55 @@ namespace ProyectVisualFerre
             this.dgv_comp_vent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_comp_vent.Size = new System.Drawing.Size(526, 227);
             this.dgv_comp_vent.TabIndex = 48;
+            // 
+            // txt_BuscarComp
+            // 
+            this.txt_BuscarComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_BuscarComp.Location = new System.Drawing.Point(172, 42);
+            this.txt_BuscarComp.Name = "txt_BuscarComp";
+            this.txt_BuscarComp.Size = new System.Drawing.Size(344, 22);
+            this.txt_BuscarComp.TabIndex = 47;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(4, 45);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(148, 16);
+            this.label9.TabIndex = 46;
+            this.label9.Text = "Buscar comprobante:";
+            // 
+            // btn_vent_comprobElim
+            // 
+            this.btn_vent_comprobElim.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_vent_comprobElim.FlatAppearance.BorderSize = 0;
+            this.btn_vent_comprobElim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_vent_comprobElim.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_vent_comprobElim.ForeColor = System.Drawing.Color.White;
+            this.btn_vent_comprobElim.Location = new System.Drawing.Point(564, 205);
+            this.btn_vent_comprobElim.Name = "btn_vent_comprobElim";
+            this.btn_vent_comprobElim.Size = new System.Drawing.Size(109, 31);
+            this.btn_vent_comprobElim.TabIndex = 45;
+            this.btn_vent_comprobElim.Text = "Eliminar";
+            this.btn_vent_comprobElim.UseVisualStyleBackColor = false;
+            this.btn_vent_comprobElim.Click += new System.EventHandler(this.btn_vent_comprobElim_Click);
+            // 
+            // btn_vent_comprobvi
+            // 
+            this.btn_vent_comprobvi.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_vent_comprobvi.FlatAppearance.BorderSize = 0;
+            this.btn_vent_comprobvi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_vent_comprobvi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_vent_comprobvi.ForeColor = System.Drawing.Color.White;
+            this.btn_vent_comprobvi.Location = new System.Drawing.Point(564, 129);
+            this.btn_vent_comprobvi.Name = "btn_vent_comprobvi";
+            this.btn_vent_comprobvi.Size = new System.Drawing.Size(109, 54);
+            this.btn_vent_comprobvi.TabIndex = 44;
+            this.btn_vent_comprobvi.Text = "Visualizar comprobante";
+            this.btn_vent_comprobvi.UseVisualStyleBackColor = false;
+            this.btn_vent_comprobvi.Click += new System.EventHandler(this.btn_vent_comprobvi_Click);
             // 
             // Admin_Ventas
             // 
@@ -380,7 +380,7 @@ namespace ProyectVisualFerre
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btn_vent_comprobElim;
         private System.Windows.Forms.Button btn_vent_comprobvi;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_BuscarComp;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView dgv_comp_vent;
     }

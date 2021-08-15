@@ -29,25 +29,25 @@ namespace ProyectVisualFerre
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_Productos));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_Productos));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgv_admin_productos = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_prod_eliminar = new System.Windows.Forms.Button();
-            this.btn_mant_editar = new System.Windows.Forms.Button();
-            this.btn_mant_nuevo = new System.Windows.Forms.Button();
+            this.btn_prod_editar = new System.Windows.Forms.Button();
+            this.btn_prod_nuevo = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dgv_admin_productos = new System.Windows.Forms.DataGridView();
+            this.txt_buscarProd = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_admin_productos)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_admin_productos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -79,91 +79,6 @@ namespace ProyectVisualFerre
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(548, 357);
             this.panel1.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.btn_prod_eliminar);
-            this.panel2.Controls.Add(this.btn_mant_editar);
-            this.panel2.Controls.Add(this.btn_mant_nuevo);
-            this.panel2.Location = new System.Drawing.Point(604, 196);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(143, 357);
-            this.panel2.TabIndex = 3;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(17, 222);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(110, 110);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btn_prod_eliminar
-            // 
-            this.btn_prod_eliminar.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btn_prod_eliminar.FlatAppearance.BorderSize = 0;
-            this.btn_prod_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_prod_eliminar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_prod_eliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_prod_eliminar.Location = new System.Drawing.Point(27, 135);
-            this.btn_prod_eliminar.Name = "btn_prod_eliminar";
-            this.btn_prod_eliminar.Size = new System.Drawing.Size(90, 31);
-            this.btn_prod_eliminar.TabIndex = 2;
-            this.btn_prod_eliminar.Text = "Eliminar";
-            this.btn_prod_eliminar.UseVisualStyleBackColor = false;
-            this.btn_prod_eliminar.Click += new System.EventHandler(this.btn_prod_eliminar_Click);
-            // 
-            // btn_mant_editar
-            // 
-            this.btn_mant_editar.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btn_mant_editar.FlatAppearance.BorderSize = 0;
-            this.btn_mant_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_mant_editar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_mant_editar.ForeColor = System.Drawing.Color.White;
-            this.btn_mant_editar.Location = new System.Drawing.Point(27, 84);
-            this.btn_mant_editar.Name = "btn_mant_editar";
-            this.btn_mant_editar.Size = new System.Drawing.Size(90, 31);
-            this.btn_mant_editar.TabIndex = 1;
-            this.btn_mant_editar.Text = "Editar";
-            this.btn_mant_editar.UseVisualStyleBackColor = false;
-            this.btn_mant_editar.Click += new System.EventHandler(this.btn_mant_editar_Click);
-            // 
-            // btn_mant_nuevo
-            // 
-            this.btn_mant_nuevo.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btn_mant_nuevo.FlatAppearance.BorderSize = 0;
-            this.btn_mant_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_mant_nuevo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_mant_nuevo.ForeColor = System.Drawing.Color.White;
-            this.btn_mant_nuevo.Location = new System.Drawing.Point(27, 35);
-            this.btn_mant_nuevo.Name = "btn_mant_nuevo";
-            this.btn_mant_nuevo.Size = new System.Drawing.Size(90, 31);
-            this.btn_mant_nuevo.TabIndex = 0;
-            this.btn_mant_nuevo.Text = "Nuevo";
-            this.btn_mant_nuevo.UseVisualStyleBackColor = false;
-            this.btn_mant_nuevo.Click += new System.EventHandler(this.btn_mant_nuevo_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(47, 167);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Buscar producto:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(187, 164);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(411, 22);
-            this.textBox1.TabIndex = 5;
             // 
             // dgv_admin_productos
             // 
@@ -206,13 +121,98 @@ namespace ProyectVisualFerre
             this.dgv_admin_productos.Size = new System.Drawing.Size(542, 351);
             this.dgv_admin_productos.TabIndex = 2;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.btn_prod_eliminar);
+            this.panel2.Controls.Add(this.btn_prod_editar);
+            this.panel2.Controls.Add(this.btn_prod_nuevo);
+            this.panel2.Location = new System.Drawing.Point(604, 196);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(143, 357);
+            this.panel2.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(17, 222);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(110, 110);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btn_prod_eliminar
+            // 
+            this.btn_prod_eliminar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_prod_eliminar.FlatAppearance.BorderSize = 0;
+            this.btn_prod_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_prod_eliminar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_prod_eliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_prod_eliminar.Location = new System.Drawing.Point(27, 135);
+            this.btn_prod_eliminar.Name = "btn_prod_eliminar";
+            this.btn_prod_eliminar.Size = new System.Drawing.Size(90, 31);
+            this.btn_prod_eliminar.TabIndex = 2;
+            this.btn_prod_eliminar.Text = "Eliminar";
+            this.btn_prod_eliminar.UseVisualStyleBackColor = false;
+            this.btn_prod_eliminar.Click += new System.EventHandler(this.btn_prod_eliminar_Click);
+            // 
+            // btn_prod_editar
+            // 
+            this.btn_prod_editar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_prod_editar.FlatAppearance.BorderSize = 0;
+            this.btn_prod_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_prod_editar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_prod_editar.ForeColor = System.Drawing.Color.White;
+            this.btn_prod_editar.Location = new System.Drawing.Point(27, 84);
+            this.btn_prod_editar.Name = "btn_prod_editar";
+            this.btn_prod_editar.Size = new System.Drawing.Size(90, 31);
+            this.btn_prod_editar.TabIndex = 1;
+            this.btn_prod_editar.Text = "Editar";
+            this.btn_prod_editar.UseVisualStyleBackColor = false;
+            this.btn_prod_editar.Click += new System.EventHandler(this.btn_prod_editar_Click);
+            // 
+            // btn_prod_nuevo
+            // 
+            this.btn_prod_nuevo.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_prod_nuevo.FlatAppearance.BorderSize = 0;
+            this.btn_prod_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_prod_nuevo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_prod_nuevo.ForeColor = System.Drawing.Color.White;
+            this.btn_prod_nuevo.Location = new System.Drawing.Point(27, 35);
+            this.btn_prod_nuevo.Name = "btn_prod_nuevo";
+            this.btn_prod_nuevo.Size = new System.Drawing.Size(90, 31);
+            this.btn_prod_nuevo.TabIndex = 0;
+            this.btn_prod_nuevo.Text = "Nuevo";
+            this.btn_prod_nuevo.UseVisualStyleBackColor = false;
+            this.btn_prod_nuevo.Click += new System.EventHandler(this.btn_prod_nuevo_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(47, 167);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(119, 16);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Buscar producto:";
+            // 
+            // txt_buscarProd
+            // 
+            this.txt_buscarProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_buscarProd.Location = new System.Drawing.Point(187, 164);
+            this.txt_buscarProd.Name = "txt_buscarProd";
+            this.txt_buscarProd.Size = new System.Drawing.Size(411, 22);
+            this.txt_buscarProd.TabIndex = 5;
+            // 
             // Admin_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(780, 570);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_buscarProd);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -223,9 +223,9 @@ namespace ProyectVisualFerre
             this.Text = "Admin_productos";
             this.Load += new System.EventHandler(this.Admin_productos_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_admin_productos)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_admin_productos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,10 +238,10 @@ namespace ProyectVisualFerre
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_prod_eliminar;
-        private System.Windows.Forms.Button btn_mant_editar;
-        private System.Windows.Forms.Button btn_mant_nuevo;
+        private System.Windows.Forms.Button btn_prod_editar;
+        private System.Windows.Forms.Button btn_prod_nuevo;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_buscarProd;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dgv_admin_productos;
     }

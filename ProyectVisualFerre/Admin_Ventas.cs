@@ -27,12 +27,12 @@ namespace ProyectVisualFerre
         //Boton visualizar comprobante 
         private void btn_vent_comprobvi_Click(object sender, EventArgs e)
         {
-            admin_FormComprobanteVenta frm_ver_comp = new admin_FormComprobanteVenta();
-            frm_ver_comp.ShowDialog();
+            
 
             if (dgv_comp_vent.SelectedRows.Count > 0)
             {
-
+                admin_FormComprobanteVenta frm_ver_comp = new admin_FormComprobanteVenta();
+                frm_ver_comp.ShowDialog();
             }
             else
             {
@@ -47,7 +47,8 @@ namespace ProyectVisualFerre
 
             if (dgv_comp_vent.SelectedRows.Count > 0)
             {
-
+                admin_FormComprobanteVenta frm_ver_comp = new admin_FormComprobanteVenta();
+                frm_ver_comp.ShowDialog();
             }
             else
             {

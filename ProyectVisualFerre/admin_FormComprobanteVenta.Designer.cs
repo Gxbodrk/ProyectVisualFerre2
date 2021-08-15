@@ -30,20 +30,20 @@ namespace ProyectVisualFerre
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txt_regresar = new System.Windows.Forms.Button();
+            this.txt_prod = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_Nventa = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txt_Ncomprob = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txt_cantidad = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_SubTotal = new System.Windows.Forms.TextBox();
+            this.txt_PrecioVenta = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,17 +51,17 @@ namespace ProyectVisualFerre
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txt_regresar);
+            this.panel1.Controls.Add(this.txt_prod);
             this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txt_Nventa);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.textBox9);
+            this.panel1.Controls.Add(this.txt_Ncomprob);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Controls.Add(this.txt_cantidad);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.txt_SubTotal);
+            this.panel1.Controls.Add(this.txt_PrecioVenta);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -70,14 +70,35 @@ namespace ProyectVisualFerre
             this.panel1.Size = new System.Drawing.Size(813, 219);
             this.panel1.TabIndex = 0;
             // 
-            // textBox2
+            // panel2
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(483, 75);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(119, 23);
-            this.textBox2.TabIndex = 55;
+            this.panel2.Location = new System.Drawing.Point(619, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(182, 195);
+            this.panel2.TabIndex = 58;
+            // 
+            // txt_regresar
+            // 
+            this.txt_regresar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.txt_regresar.FlatAppearance.BorderSize = 0;
+            this.txt_regresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txt_regresar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_regresar.ForeColor = System.Drawing.Color.White;
+            this.txt_regresar.Location = new System.Drawing.Point(449, 153);
+            this.txt_regresar.Name = "txt_regresar";
+            this.txt_regresar.Size = new System.Drawing.Size(95, 28);
+            this.txt_regresar.TabIndex = 57;
+            this.txt_regresar.Text = "Regresar";
+            this.txt_regresar.UseVisualStyleBackColor = false;
+            // 
+            // txt_prod
+            // 
+            this.txt_prod.Enabled = false;
+            this.txt_prod.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_prod.Location = new System.Drawing.Point(483, 75);
+            this.txt_prod.Name = "txt_prod";
+            this.txt_prod.Size = new System.Drawing.Size(119, 23);
+            this.txt_prod.TabIndex = 55;
             // 
             // label14
             // 
@@ -90,15 +111,15 @@ namespace ProyectVisualFerre
             this.label14.TabIndex = 54;
             this.label14.Text = "Producto:";
             // 
-            // textBox1
+            // txt_Nventa
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(483, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(32, 23);
-            this.textBox1.TabIndex = 53;
-            this.textBox1.Text = "1";
+            this.txt_Nventa.Enabled = false;
+            this.txt_Nventa.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Nventa.Location = new System.Drawing.Point(483, 33);
+            this.txt_Nventa.Name = "txt_Nventa";
+            this.txt_Nventa.Size = new System.Drawing.Size(32, 23);
+            this.txt_Nventa.TabIndex = 53;
+            this.txt_Nventa.Text = "1";
             // 
             // label13
             // 
@@ -111,15 +132,15 @@ namespace ProyectVisualFerre
             this.label13.TabIndex = 52;
             this.label13.Text = "Número de venta:";
             // 
-            // textBox9
+            // txt_Ncomprob
             // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(209, 33);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(54, 23);
-            this.textBox9.TabIndex = 51;
-            this.textBox9.Text = "1";
+            this.txt_Ncomprob.Enabled = false;
+            this.txt_Ncomprob.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Ncomprob.Location = new System.Drawing.Point(209, 33);
+            this.txt_Ncomprob.Name = "txt_Ncomprob";
+            this.txt_Ncomprob.Size = new System.Drawing.Size(54, 23);
+            this.txt_Ncomprob.TabIndex = 51;
+            this.txt_Ncomprob.Text = "1";
             // 
             // label9
             // 
@@ -132,14 +153,14 @@ namespace ProyectVisualFerre
             this.label9.TabIndex = 50;
             this.label9.Text = "Número de comprobante:";
             // 
-            // textBox7
+            // txt_cantidad
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(209, 117);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(121, 23);
-            this.textBox7.TabIndex = 49;
+            this.txt_cantidad.Enabled = false;
+            this.txt_cantidad.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cantidad.Location = new System.Drawing.Point(209, 117);
+            this.txt_cantidad.Name = "txt_cantidad";
+            this.txt_cantidad.Size = new System.Drawing.Size(121, 23);
+            this.txt_cantidad.TabIndex = 49;
             // 
             // label10
             // 
@@ -152,23 +173,23 @@ namespace ProyectVisualFerre
             this.label10.TabIndex = 48;
             this.label10.Text = "Cantidad:";
             // 
-            // textBox5
+            // txt_SubTotal
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(209, 162);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(121, 23);
-            this.textBox5.TabIndex = 47;
+            this.txt_SubTotal.Enabled = false;
+            this.txt_SubTotal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_SubTotal.Location = new System.Drawing.Point(209, 162);
+            this.txt_SubTotal.Name = "txt_SubTotal";
+            this.txt_SubTotal.Size = new System.Drawing.Size(121, 23);
+            this.txt_SubTotal.TabIndex = 47;
             // 
-            // textBox3
+            // txt_PrecioVenta
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(209, 75);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 23);
-            this.textBox3.TabIndex = 46;
+            this.txt_PrecioVenta.Enabled = false;
+            this.txt_PrecioVenta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_PrecioVenta.Location = new System.Drawing.Point(209, 75);
+            this.txt_PrecioVenta.Name = "txt_PrecioVenta";
+            this.txt_PrecioVenta.Size = new System.Drawing.Size(121, 23);
+            this.txt_PrecioVenta.TabIndex = 46;
             // 
             // label11
             // 
@@ -192,27 +213,6 @@ namespace ProyectVisualFerre
             this.label12.TabIndex = 44;
             this.label12.Text = "Precio de venta:";
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(449, 153);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 28);
-            this.button2.TabIndex = 57;
-            this.button2.Text = "Regresar";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(619, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(182, 195);
-            this.panel2.TabIndex = 58;
-            // 
             // admin_FormComprobanteVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,19 +231,19 @@ namespace ProyectVisualFerre
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox txt_prod;
         private System.Windows.Forms.Label label14;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox txt_Nventa;
         private System.Windows.Forms.Label label13;
-        public System.Windows.Forms.TextBox textBox9;
+        public System.Windows.Forms.TextBox txt_Ncomprob;
         private System.Windows.Forms.Label label9;
-        public System.Windows.Forms.TextBox textBox7;
+        public System.Windows.Forms.TextBox txt_cantidad;
         private System.Windows.Forms.Label label10;
-        public System.Windows.Forms.TextBox textBox5;
-        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox txt_SubTotal;
+        public System.Windows.Forms.TextBox txt_PrecioVenta;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button txt_regresar;
     }
 }

@@ -32,26 +32,26 @@ namespace ProyectVisualFerre
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin_FormClientesEditar));
             this.pl_form_abrir_editar = new System.Windows.Forms.Panel();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txt_Spassw = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txt_Ppassw = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txt_telefono = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_Sapellido = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txt_Papellido = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt_Snombre = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txt_cedula = new System.Windows.Forms.TextBox();
+            this.txt_edad = new System.Windows.Forms.TextBox();
+            this.txt_Pnombre = new System.Windows.Forms.TextBox();
+            this.txt_direc = new System.Windows.Forms.TextBox();
+            this.btn_cancelar = new System.Windows.Forms.Button();
+            this.btn_guardar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -66,26 +66,26 @@ namespace ProyectVisualFerre
             // 
             this.pl_form_abrir_editar.BackColor = System.Drawing.Color.White;
             this.pl_form_abrir_editar.Controls.Add(this.trackBar1);
-            this.pl_form_abrir_editar.Controls.Add(this.textBox10);
+            this.pl_form_abrir_editar.Controls.Add(this.txt_Spassw);
             this.pl_form_abrir_editar.Controls.Add(this.label4);
-            this.pl_form_abrir_editar.Controls.Add(this.textBox11);
+            this.pl_form_abrir_editar.Controls.Add(this.txt_Ppassw);
             this.pl_form_abrir_editar.Controls.Add(this.label8);
             this.pl_form_abrir_editar.Controls.Add(this.textBox9);
             this.pl_form_abrir_editar.Controls.Add(this.label3);
-            this.pl_form_abrir_editar.Controls.Add(this.textBox8);
+            this.pl_form_abrir_editar.Controls.Add(this.txt_telefono);
             this.pl_form_abrir_editar.Controls.Add(this.label11);
-            this.pl_form_abrir_editar.Controls.Add(this.textBox1);
+            this.pl_form_abrir_editar.Controls.Add(this.txt_Sapellido);
             this.pl_form_abrir_editar.Controls.Add(this.label1);
-            this.pl_form_abrir_editar.Controls.Add(this.textBox7);
+            this.pl_form_abrir_editar.Controls.Add(this.txt_Papellido);
             this.pl_form_abrir_editar.Controls.Add(this.label10);
-            this.pl_form_abrir_editar.Controls.Add(this.textBox6);
+            this.pl_form_abrir_editar.Controls.Add(this.txt_Snombre);
             this.pl_form_abrir_editar.Controls.Add(this.label9);
-            this.pl_form_abrir_editar.Controls.Add(this.textBox5);
-            this.pl_form_abrir_editar.Controls.Add(this.textBox4);
-            this.pl_form_abrir_editar.Controls.Add(this.textBox3);
-            this.pl_form_abrir_editar.Controls.Add(this.textBox2);
-            this.pl_form_abrir_editar.Controls.Add(this.button2);
-            this.pl_form_abrir_editar.Controls.Add(this.button1);
+            this.pl_form_abrir_editar.Controls.Add(this.txt_cedula);
+            this.pl_form_abrir_editar.Controls.Add(this.txt_edad);
+            this.pl_form_abrir_editar.Controls.Add(this.txt_Pnombre);
+            this.pl_form_abrir_editar.Controls.Add(this.txt_direc);
+            this.pl_form_abrir_editar.Controls.Add(this.btn_cancelar);
+            this.pl_form_abrir_editar.Controls.Add(this.btn_guardar);
             this.pl_form_abrir_editar.Controls.Add(this.label7);
             this.pl_form_abrir_editar.Controls.Add(this.label6);
             this.pl_form_abrir_editar.Controls.Add(this.label5);
@@ -104,14 +104,15 @@ namespace ProyectVisualFerre
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(324, 45);
             this.trackBar1.TabIndex = 36;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
-            // textBox10
+            // txt_Spassw
             // 
-            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(301, 360);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(179, 23);
-            this.textBox10.TabIndex = 35;
+            this.txt_Spassw.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Spassw.Location = new System.Drawing.Point(301, 360);
+            this.txt_Spassw.Name = "txt_Spassw";
+            this.txt_Spassw.Size = new System.Drawing.Size(179, 23);
+            this.txt_Spassw.TabIndex = 35;
             // 
             // label4
             // 
@@ -123,13 +124,13 @@ namespace ProyectVisualFerre
             this.label4.TabIndex = 34;
             this.label4.Text = "Confirmar contraseña:";
             // 
-            // textBox11
+            // txt_Ppassw
             // 
-            this.textBox11.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(33, 360);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(179, 23);
-            this.textBox11.TabIndex = 33;
+            this.txt_Ppassw.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Ppassw.Location = new System.Drawing.Point(33, 360);
+            this.txt_Ppassw.Name = "txt_Ppassw";
+            this.txt_Ppassw.Size = new System.Drawing.Size(179, 23);
+            this.txt_Ppassw.TabIndex = 33;
             // 
             // label8
             // 
@@ -161,13 +162,13 @@ namespace ProyectVisualFerre
             this.label3.TabIndex = 30;
             this.label3.Text = "ID:";
             // 
-            // textBox8
+            // txt_telefono
             // 
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(427, 173);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(121, 23);
-            this.textBox8.TabIndex = 29;
+            this.txt_telefono.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_telefono.Location = new System.Drawing.Point(427, 173);
+            this.txt_telefono.Name = "txt_telefono";
+            this.txt_telefono.Size = new System.Drawing.Size(121, 23);
+            this.txt_telefono.TabIndex = 29;
             // 
             // label11
             // 
@@ -179,13 +180,13 @@ namespace ProyectVisualFerre
             this.label11.TabIndex = 28;
             this.label11.Text = "N° Telefóno:";
             // 
-            // textBox1
+            // txt_Sapellido
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(427, 129);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 23);
-            this.textBox1.TabIndex = 27;
+            this.txt_Sapellido.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Sapellido.Location = new System.Drawing.Point(427, 129);
+            this.txt_Sapellido.Name = "txt_Sapellido";
+            this.txt_Sapellido.Size = new System.Drawing.Size(121, 23);
+            this.txt_Sapellido.TabIndex = 27;
             // 
             // label1
             // 
@@ -197,13 +198,13 @@ namespace ProyectVisualFerre
             this.label1.TabIndex = 26;
             this.label1.Text = "Segundo apellido:";
             // 
-            // textBox7
+            // txt_Papellido
             // 
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(150, 128);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(121, 23);
-            this.textBox7.TabIndex = 25;
+            this.txt_Papellido.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Papellido.Location = new System.Drawing.Point(150, 128);
+            this.txt_Papellido.Name = "txt_Papellido";
+            this.txt_Papellido.Size = new System.Drawing.Size(121, 23);
+            this.txt_Papellido.TabIndex = 25;
             // 
             // label10
             // 
@@ -215,13 +216,13 @@ namespace ProyectVisualFerre
             this.label10.TabIndex = 24;
             this.label10.Text = "Primer apellido:";
             // 
-            // textBox6
+            // txt_Snombre
             // 
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(427, 87);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(121, 23);
-            this.textBox6.TabIndex = 23;
+            this.txt_Snombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Snombre.Location = new System.Drawing.Point(427, 87);
+            this.txt_Snombre.Name = "txt_Snombre";
+            this.txt_Snombre.Size = new System.Drawing.Size(121, 23);
+            this.txt_Snombre.TabIndex = 23;
             // 
             // label9
             // 
@@ -233,67 +234,67 @@ namespace ProyectVisualFerre
             this.label9.TabIndex = 22;
             this.label9.Text = "Segundo nombre:";
             // 
-            // textBox5
+            // txt_cedula
             // 
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(150, 173);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(121, 23);
-            this.textBox5.TabIndex = 15;
+            this.txt_cedula.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cedula.Location = new System.Drawing.Point(150, 173);
+            this.txt_cedula.Name = "txt_cedula";
+            this.txt_cedula.Size = new System.Drawing.Size(121, 23);
+            this.txt_cedula.TabIndex = 15;
             // 
-            // textBox4
+            // txt_edad
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(150, 222);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(50, 23);
-            this.textBox4.TabIndex = 14;
-            this.textBox4.Text = "0";
+            this.txt_edad.Enabled = false;
+            this.txt_edad.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_edad.Location = new System.Drawing.Point(150, 222);
+            this.txt_edad.Name = "txt_edad";
+            this.txt_edad.Size = new System.Drawing.Size(50, 23);
+            this.txt_edad.TabIndex = 14;
+            this.txt_edad.Text = "0";
             // 
-            // textBox3
+            // txt_Pnombre
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(150, 86);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 23);
-            this.textBox3.TabIndex = 13;
+            this.txt_Pnombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Pnombre.Location = new System.Drawing.Point(150, 86);
+            this.txt_Pnombre.Name = "txt_Pnombre";
+            this.txt_Pnombre.Size = new System.Drawing.Size(121, 23);
+            this.txt_Pnombre.TabIndex = 13;
             // 
-            // textBox2
+            // txt_direc
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(150, 266);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(233, 23);
-            this.textBox2.TabIndex = 12;
+            this.txt_direc.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_direc.Location = new System.Drawing.Point(150, 266);
+            this.txt_direc.Name = "txt_direc";
+            this.txt_direc.Size = new System.Drawing.Size(233, 23);
+            this.txt_direc.TabIndex = 12;
             // 
-            // button2
+            // btn_cancelar
             // 
-            this.button2.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(697, 310);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 28);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_cancelar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_cancelar.FlatAppearance.BorderSize = 0;
+            this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cancelar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar.ForeColor = System.Drawing.Color.White;
+            this.btn_cancelar.Location = new System.Drawing.Point(697, 310);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(95, 28);
+            this.btn_cancelar.TabIndex = 10;
+            this.btn_cancelar.Text = "Cancelar";
+            this.btn_cancelar.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btn_guardar
             // 
-            this.button1.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(581, 310);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 28);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_guardar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_guardar.FlatAppearance.BorderSize = 0;
+            this.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_guardar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_guardar.ForeColor = System.Drawing.Color.White;
+            this.btn_guardar.Location = new System.Drawing.Point(581, 310);
+            this.btn_guardar.Name = "btn_guardar";
+            this.btn_guardar.Size = new System.Drawing.Size(95, 28);
+            this.btn_guardar.TabIndex = 9;
+            this.btn_guardar.Text = "Guardar";
+            this.btn_guardar.UseVisualStyleBackColor = false;
             // 
             // label7
             // 
@@ -354,6 +355,7 @@ namespace ProyectVisualFerre
             this.Name = "admin_FormClientesEditar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "admin_FormClientesEditar";
+            this.Load += new System.EventHandler(this.admin_FormClientesEditar_Load);
             this.pl_form_abrir_editar.ResumeLayout(false);
             this.pl_form_abrir_editar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
@@ -365,30 +367,30 @@ namespace ProyectVisualFerre
         #endregion
 
         private System.Windows.Forms.Panel pl_form_abrir_editar;
-        public System.Windows.Forms.TextBox textBox5;
-        public System.Windows.Forms.TextBox textBox4;
-        public System.Windows.Forms.TextBox textBox3;
-        public System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.TextBox txt_cedula;
+        public System.Windows.Forms.TextBox txt_edad;
+        public System.Windows.Forms.TextBox txt_Pnombre;
+        public System.Windows.Forms.TextBox txt_direc;
+        private System.Windows.Forms.Button btn_cancelar;
+        private System.Windows.Forms.Button btn_guardar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        public System.Windows.Forms.TextBox textBox10;
+        public System.Windows.Forms.TextBox txt_Spassw;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.TextBox textBox11;
+        public System.Windows.Forms.TextBox txt_Ppassw;
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.TextBox textBox8;
+        public System.Windows.Forms.TextBox txt_telefono;
         private System.Windows.Forms.Label label11;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox txt_Sapellido;
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.TextBox textBox7;
+        public System.Windows.Forms.TextBox txt_Papellido;
         private System.Windows.Forms.Label label10;
-        public System.Windows.Forms.TextBox textBox6;
+        public System.Windows.Forms.TextBox txt_Snombre;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TrackBar trackBar1;
     }

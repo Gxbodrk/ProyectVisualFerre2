@@ -33,30 +33,30 @@ namespace ProyectVisualFerre
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_BuscarProd = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_clt_eliminar = new System.Windows.Forms.Button();
+            this.btn_mant_eliminar = new System.Windows.Forms.Button();
             this.btn_mant_editar = new System.Windows.Forms.Button();
             this.btn_mant_anadir = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgv_admin_clientes = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgv_admin_clientes = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_admin_clientes)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txt_BuscarProd
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(184, 160);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(411, 22);
-            this.textBox1.TabIndex = 11;
+            this.txt_BuscarProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_BuscarProd.Location = new System.Drawing.Point(184, 160);
+            this.txt_BuscarProd.Name = "txt_BuscarProd";
+            this.txt_BuscarProd.Size = new System.Drawing.Size(411, 22);
+            this.txt_BuscarProd.TabIndex = 11;
             // 
             // label3
             // 
@@ -72,7 +72,7 @@ namespace ProyectVisualFerre
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.btn_clt_eliminar);
+            this.panel2.Controls.Add(this.btn_mant_eliminar);
             this.panel2.Controls.Add(this.btn_mant_editar);
             this.panel2.Controls.Add(this.btn_mant_anadir);
             this.panel2.Location = new System.Drawing.Point(601, 192);
@@ -90,20 +90,20 @@ namespace ProyectVisualFerre
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // btn_clt_eliminar
+            // btn_mant_eliminar
             // 
-            this.btn_clt_eliminar.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btn_clt_eliminar.FlatAppearance.BorderSize = 0;
-            this.btn_clt_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_clt_eliminar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_clt_eliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_clt_eliminar.Location = new System.Drawing.Point(27, 134);
-            this.btn_clt_eliminar.Name = "btn_clt_eliminar";
-            this.btn_clt_eliminar.Size = new System.Drawing.Size(90, 31);
-            this.btn_clt_eliminar.TabIndex = 2;
-            this.btn_clt_eliminar.Text = "Eliminar";
-            this.btn_clt_eliminar.UseVisualStyleBackColor = false;
-            this.btn_clt_eliminar.Click += new System.EventHandler(this.btn_clt_eliminar_Click);
+            this.btn_mant_eliminar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_mant_eliminar.FlatAppearance.BorderSize = 0;
+            this.btn_mant_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mant_eliminar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_mant_eliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_mant_eliminar.Location = new System.Drawing.Point(27, 134);
+            this.btn_mant_eliminar.Name = "btn_mant_eliminar";
+            this.btn_mant_eliminar.Size = new System.Drawing.Size(90, 31);
+            this.btn_mant_eliminar.TabIndex = 2;
+            this.btn_mant_eliminar.Text = "Eliminar";
+            this.btn_mant_eliminar.UseVisualStyleBackColor = false;
+            this.btn_mant_eliminar.Click += new System.EventHandler(this.btn_mant_eliminar_Click);
             // 
             // btn_mant_editar
             // 
@@ -142,28 +142,6 @@ namespace ProyectVisualFerre
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(548, 357);
             this.panel1.TabIndex = 8;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(44, 133);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 16);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Listado de clientes:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(178, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(395, 32);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "MANTENIMIENTO DE CLIENTES";
             // 
             // dgv_admin_clientes
             // 
@@ -206,13 +184,35 @@ namespace ProyectVisualFerre
             this.dgv_admin_clientes.Size = new System.Drawing.Size(542, 351);
             this.dgv_admin_clientes.TabIndex = 1;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(44, 133);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(133, 16);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Listado de clientes:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(178, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(395, 32);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "MANTENIMIENTO DE CLIENTES";
+            // 
             // Admin_Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(780, 570);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_BuscarProd);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -233,10 +233,10 @@ namespace ProyectVisualFerre
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_BuscarProd;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_clt_eliminar;
+        private System.Windows.Forms.Button btn_mant_eliminar;
         private System.Windows.Forms.Button btn_mant_editar;
         private System.Windows.Forms.Button btn_mant_anadir;
         private System.Windows.Forms.Panel panel1;

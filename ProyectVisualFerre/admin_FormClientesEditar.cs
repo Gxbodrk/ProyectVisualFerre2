@@ -16,5 +16,18 @@ namespace ProyectVisualFerre
         {
             InitializeComponent();
         }
+
+        //Load formulario clientes
+        private void admin_FormClientesEditar_Load(object sender, EventArgs e)
+        {
+            
+        }
+        //fin load
+
+        //Track bar scroll edad
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            txt_edad.Text = trackBar1.Value.ToString();
+        }
     }
 }

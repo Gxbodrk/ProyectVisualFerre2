@@ -31,14 +31,16 @@ namespace ProyectVisualFerre
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin_FormCrearEditar));
             this.pl_form_abrir_editar = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_cancelar = new System.Windows.Forms.Button();
+            this.btn_guardar = new System.Windows.Forms.Button();
+            this.cmb_estado = new System.Windows.Forms.ComboBox();
+            this.cmb_marca = new System.Windows.Forms.ComboBox();
+            this.cmb_categoria = new System.Windows.Forms.ComboBox();
+            this.txt_stock = new System.Windows.Forms.TextBox();
+            this.txt_PrecioVenta = new System.Windows.Forms.TextBox();
+            this.txt_PrecioCompra = new System.Windows.Forms.TextBox();
+            this.txt_descrp = new System.Windows.Forms.TextBox();
+            this.txt_id = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,8 +50,6 @@ namespace ProyectVisualFerre
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.pl_form_abrir_editar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -57,16 +57,16 @@ namespace ProyectVisualFerre
             // pl_form_abrir_editar
             // 
             this.pl_form_abrir_editar.BackColor = System.Drawing.Color.White;
-            this.pl_form_abrir_editar.Controls.Add(this.button2);
-            this.pl_form_abrir_editar.Controls.Add(this.button1);
-            this.pl_form_abrir_editar.Controls.Add(this.comboBox3);
-            this.pl_form_abrir_editar.Controls.Add(this.comboBox2);
-            this.pl_form_abrir_editar.Controls.Add(this.comboBox1);
-            this.pl_form_abrir_editar.Controls.Add(this.textBox5);
-            this.pl_form_abrir_editar.Controls.Add(this.textBox4);
-            this.pl_form_abrir_editar.Controls.Add(this.textBox3);
-            this.pl_form_abrir_editar.Controls.Add(this.textBox2);
-            this.pl_form_abrir_editar.Controls.Add(this.textBox1);
+            this.pl_form_abrir_editar.Controls.Add(this.btn_cancelar);
+            this.pl_form_abrir_editar.Controls.Add(this.btn_guardar);
+            this.pl_form_abrir_editar.Controls.Add(this.cmb_estado);
+            this.pl_form_abrir_editar.Controls.Add(this.cmb_marca);
+            this.pl_form_abrir_editar.Controls.Add(this.cmb_categoria);
+            this.pl_form_abrir_editar.Controls.Add(this.txt_stock);
+            this.pl_form_abrir_editar.Controls.Add(this.txt_PrecioVenta);
+            this.pl_form_abrir_editar.Controls.Add(this.txt_PrecioCompra);
+            this.pl_form_abrir_editar.Controls.Add(this.txt_descrp);
+            this.pl_form_abrir_editar.Controls.Add(this.txt_id);
             this.pl_form_abrir_editar.Controls.Add(this.label8);
             this.pl_form_abrir_editar.Controls.Add(this.label7);
             this.pl_form_abrir_editar.Controls.Add(this.label6);
@@ -82,79 +82,107 @@ namespace ProyectVisualFerre
             this.pl_form_abrir_editar.Size = new System.Drawing.Size(809, 286);
             this.pl_form_abrir_editar.TabIndex = 0;
             // 
-            // comboBox3
+            // btn_cancelar
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.btn_cancelar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_cancelar.FlatAppearance.BorderSize = 0;
+            this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cancelar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar.ForeColor = System.Drawing.Color.White;
+            this.btn_cancelar.Location = new System.Drawing.Point(703, 235);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(95, 28);
+            this.btn_cancelar.TabIndex = 23;
+            this.btn_cancelar.Text = "Cancelar";
+            this.btn_cancelar.UseVisualStyleBackColor = false;
+            // 
+            // btn_guardar
+            // 
+            this.btn_guardar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_guardar.FlatAppearance.BorderSize = 0;
+            this.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_guardar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_guardar.ForeColor = System.Drawing.Color.White;
+            this.btn_guardar.Location = new System.Drawing.Point(587, 235);
+            this.btn_guardar.Name = "btn_guardar";
+            this.btn_guardar.Size = new System.Drawing.Size(95, 28);
+            this.btn_guardar.TabIndex = 22;
+            this.btn_guardar.Text = "Guardar";
+            this.btn_guardar.UseVisualStyleBackColor = false;
+            // 
+            // cmb_estado
+            // 
+            this.cmb_estado.FormattingEnabled = true;
+            this.cmb_estado.Items.AddRange(new object[] {
             "Disponible",
             "No disponible"});
-            this.comboBox3.Location = new System.Drawing.Point(453, 133);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 21;
+            this.cmb_estado.Location = new System.Drawing.Point(453, 133);
+            this.cmb_estado.Name = "cmb_estado";
+            this.cmb_estado.Size = new System.Drawing.Size(121, 21);
+            this.cmb_estado.TabIndex = 21;
             // 
-            // comboBox2
+            // cmb_marca
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmb_marca.FormattingEnabled = true;
+            this.cmb_marca.Items.AddRange(new object[] {
             "Truper",
             "DeWALT",
             "Lenox",
             "3M",
             "Sika",
             "Pintuco"});
-            this.comboBox2.Location = new System.Drawing.Point(453, 91);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 20;
+            this.cmb_marca.Location = new System.Drawing.Point(453, 91);
+            this.cmb_marca.Name = "cmb_marca";
+            this.cmb_marca.Size = new System.Drawing.Size(121, 21);
+            this.cmb_marca.TabIndex = 20;
             // 
-            // comboBox1
+            // cmb_categoria
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmb_categoria.FormattingEnabled = true;
+            this.cmb_categoria.Items.AddRange(new object[] {
             "Pinturas",
             "Tornillos",
             "Herramientas ",
             "Llaves"});
-            this.comboBox1.Location = new System.Drawing.Point(453, 52);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 19;
+            this.cmb_categoria.Location = new System.Drawing.Point(453, 52);
+            this.cmb_categoria.Name = "cmb_categoria";
+            this.cmb_categoria.Size = new System.Drawing.Size(121, 21);
+            this.cmb_categoria.TabIndex = 19;
             // 
-            // textBox5
+            // txt_stock
             // 
-            this.textBox5.Location = new System.Drawing.Point(142, 162);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(121, 20);
-            this.textBox5.TabIndex = 15;
+            this.txt_stock.Location = new System.Drawing.Point(142, 162);
+            this.txt_stock.Name = "txt_stock";
+            this.txt_stock.Size = new System.Drawing.Size(121, 20);
+            this.txt_stock.TabIndex = 15;
             // 
-            // textBox4
+            // txt_PrecioVenta
             // 
-            this.textBox4.Location = new System.Drawing.Point(142, 126);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 20);
-            this.textBox4.TabIndex = 14;
+            this.txt_PrecioVenta.Location = new System.Drawing.Point(142, 126);
+            this.txt_PrecioVenta.Name = "txt_PrecioVenta";
+            this.txt_PrecioVenta.Size = new System.Drawing.Size(121, 20);
+            this.txt_PrecioVenta.TabIndex = 14;
             // 
-            // textBox3
+            // txt_PrecioCompra
             // 
-            this.textBox3.Location = new System.Drawing.Point(142, 91);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 20);
-            this.textBox3.TabIndex = 13;
+            this.txt_PrecioCompra.Location = new System.Drawing.Point(142, 91);
+            this.txt_PrecioCompra.Name = "txt_PrecioCompra";
+            this.txt_PrecioCompra.Size = new System.Drawing.Size(121, 20);
+            this.txt_PrecioCompra.TabIndex = 13;
             // 
-            // textBox2
+            // txt_descrp
             // 
-            this.textBox2.Location = new System.Drawing.Point(142, 198);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(233, 20);
-            this.textBox2.TabIndex = 12;
+            this.txt_descrp.Location = new System.Drawing.Point(142, 198);
+            this.txt_descrp.Name = "txt_descrp";
+            this.txt_descrp.Size = new System.Drawing.Size(233, 20);
+            this.txt_descrp.TabIndex = 12;
             // 
-            // textBox1
+            // txt_id
             // 
-            this.textBox1.Location = new System.Drawing.Point(142, 53);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(94, 20);
-            this.textBox1.TabIndex = 11;
+            this.txt_id.Location = new System.Drawing.Point(142, 53);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.Size = new System.Drawing.Size(94, 20);
+            this.txt_id.TabIndex = 11;
             // 
             // label8
             // 
@@ -246,34 +274,6 @@ namespace ProyectVisualFerre
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(703, 235);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 28);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(587, 235);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 28);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // admin_FormCrearEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -302,15 +302,15 @@ namespace ProyectVisualFerre
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label8;
-        public System.Windows.Forms.ComboBox comboBox3;
-        public System.Windows.Forms.ComboBox comboBox2;
-        public System.Windows.Forms.TextBox textBox5;
-        public System.Windows.Forms.TextBox textBox4;
-        public System.Windows.Forms.TextBox textBox3;
-        public System.Windows.Forms.TextBox textBox2;
-        public System.Windows.Forms.TextBox textBox1;
-        public System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.ComboBox cmb_estado;
+        public System.Windows.Forms.ComboBox cmb_marca;
+        public System.Windows.Forms.TextBox txt_stock;
+        public System.Windows.Forms.TextBox txt_PrecioVenta;
+        public System.Windows.Forms.TextBox txt_PrecioCompra;
+        public System.Windows.Forms.TextBox txt_descrp;
+        public System.Windows.Forms.TextBox txt_id;
+        public System.Windows.Forms.ComboBox cmb_categoria;
+        private System.Windows.Forms.Button btn_cancelar;
+        private System.Windows.Forms.Button btn_guardar;
     }
 }

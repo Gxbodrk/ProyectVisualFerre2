@@ -24,30 +24,29 @@ namespace ProyectVisualFerre
         }
         //fin load
 
-        //Boton nuevo producto
-        private void btn_mant_nuevo_Click(object sender, EventArgs e)
+         //Boton nuevo producto
+        private void btn_prod_nuevo_Click(object sender, EventArgs e)
         {
             admin_FormCrearEditar frm_crear = new admin_FormCrearEditar();
             frm_crear.ShowDialog();
         }
-        //fin boton crear producto
+        //fin boton
 
         //boton editar producto
-        private void btn_mant_editar_Click(object sender, EventArgs e)
+        private void btn_prod_editar_Click(object sender, EventArgs e)
         {
-            admin_FormCrearEditar frm_editar = new admin_FormCrearEditar();
-            frm_editar.ShowDialog();
-
             if (dgv_admin_productos.SelectedRows.Count > 0)
             {
-
+                admin_FormCrearEditar frm_editar = new admin_FormCrearEditar();
+                frm_editar.ShowDialog();
             }
             else
             {
                 MessageBox.Show("Seleccione una fila para poder editar el producto");
             }
         }
-        //fin boton editar producto
+        //fin boton
+
 
         //Boton eliminar producto
         private void btn_prod_eliminar_Click(object sender, EventArgs e)
@@ -61,6 +60,9 @@ namespace ProyectVisualFerre
                 MessageBox.Show("Seleccione una fila para poder eliminar el producto");
             }
         }
-        //fin boton eliminar producto
+        //fin boton
+
+        
+
     }
 }

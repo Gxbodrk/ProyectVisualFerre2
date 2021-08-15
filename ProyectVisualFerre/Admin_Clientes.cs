@@ -35,11 +35,11 @@ namespace ProyectVisualFerre
         //Boton editar cliente
         private void btn_mant_editar_Click(object sender, EventArgs e)
         {
-            admin_FormClientesEditar frm_editar_clt = new admin_FormClientesEditar();
-            frm_editar_clt.ShowDialog();
 
             if (dgv_admin_clientes.SelectedRows.Count > 0)
             {
+                admin_FormClientesEditar frm_editar_clt = new admin_FormClientesEditar();
+                frm_editar_clt.ShowDialog();
 
             }
             else
@@ -47,20 +47,21 @@ namespace ProyectVisualFerre
                 MessageBox.Show("Seleccione una fila para poder editar un usuario");
             }
         }
-        //Fin boton editar cliente
+        //Fin boton
 
         //Boton eliminar cliente
-        private void btn_clt_eliminar_Click(object sender, EventArgs e)
+        private void btn_mant_eliminar_Click(object sender, EventArgs e)
         {
             if (dgv_admin_clientes.SelectedRows.Count > 0)
             {
-
+                admin_FormClientesEditar frm_editar_clt = new admin_FormClientesEditar();
+                frm_editar_clt.ShowDialog();
             }
             else
             {
                 MessageBox.Show("Seleccione una fila para poder eliminar el usuario");
             }
         }
-        //fin boton eliminar cliente
+        //fin boton
     }
 }
