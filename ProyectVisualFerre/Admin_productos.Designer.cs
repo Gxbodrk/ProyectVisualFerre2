@@ -35,7 +35,7 @@ namespace ProyectVisualFerre
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_Productos));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnl_dgv = new System.Windows.Forms.Panel();
             this.dgv_admin_productos = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -44,7 +44,7 @@ namespace ProyectVisualFerre
             this.btn_prod_nuevo = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_buscarProd = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
+            this.pnl_dgv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_admin_productos)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,13 +72,14 @@ namespace ProyectVisualFerre
             this.label2.TabIndex = 1;
             this.label2.Text = "Lista de productos:";
             // 
-            // panel1
+            // pnl_dgv
             // 
-            this.panel1.Controls.Add(this.dgv_admin_productos);
-            this.panel1.Location = new System.Drawing.Point(50, 196);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(548, 357);
-            this.panel1.TabIndex = 2;
+            this.pnl_dgv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_dgv.Controls.Add(this.dgv_admin_productos);
+            this.pnl_dgv.Location = new System.Drawing.Point(50, 196);
+            this.pnl_dgv.Name = "pnl_dgv";
+            this.pnl_dgv.Size = new System.Drawing.Size(548, 357);
+            this.pnl_dgv.TabIndex = 2;
             // 
             // dgv_admin_productos
             // 
@@ -215,14 +216,14 @@ namespace ProyectVisualFerre
             this.Controls.Add(this.txt_buscarProd);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnl_dgv);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin_Productos";
             this.Text = "Admin_productos";
             this.Load += new System.EventHandler(this.Admin_productos_Load);
-            this.panel1.ResumeLayout(false);
+            this.pnl_dgv.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_admin_productos)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -235,7 +236,7 @@ namespace ProyectVisualFerre
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnl_dgv;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_prod_eliminar;
         private System.Windows.Forms.Button btn_prod_editar;

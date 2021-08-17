@@ -30,9 +30,9 @@ namespace ProyectVisualFerre
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_Clientes));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txt_BuscarProd = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -40,13 +40,13 @@ namespace ProyectVisualFerre
             this.btn_mant_eliminar = new System.Windows.Forms.Button();
             this.btn_mant_editar = new System.Windows.Forms.Button();
             this.btn_mant_anadir = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnl_dgv = new System.Windows.Forms.Panel();
             this.dgv_admin_clientes = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.pnl_dgv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_admin_clientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -135,13 +135,14 @@ namespace ProyectVisualFerre
             this.btn_mant_anadir.UseVisualStyleBackColor = false;
             this.btn_mant_anadir.Click += new System.EventHandler(this.btn_mant_anadir_Click);
             // 
-            // panel1
+            // pnl_dgv
             // 
-            this.panel1.Controls.Add(this.dgv_admin_clientes);
-            this.panel1.Location = new System.Drawing.Point(47, 192);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(548, 357);
-            this.panel1.TabIndex = 8;
+            this.pnl_dgv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_dgv.Controls.Add(this.dgv_admin_clientes);
+            this.pnl_dgv.Location = new System.Drawing.Point(47, 192);
+            this.pnl_dgv.Name = "pnl_dgv";
+            this.pnl_dgv.Size = new System.Drawing.Size(548, 357);
+            this.pnl_dgv.TabIndex = 8;
             // 
             // dgv_admin_clientes
             // 
@@ -151,14 +152,14 @@ namespace ProyectVisualFerre
             this.dgv_admin_clientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_admin_clientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_admin_clientes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_admin_clientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_admin_clientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_admin_clientes.ColumnHeadersHeight = 25;
             this.dgv_admin_clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_admin_clientes.EnableHeadersVisualStyles = false;
@@ -166,20 +167,20 @@ namespace ProyectVisualFerre
             this.dgv_admin_clientes.Location = new System.Drawing.Point(3, 3);
             this.dgv_admin_clientes.Name = "dgv_admin_clientes";
             this.dgv_admin_clientes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_admin_clientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkSlateGray;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            this.dgv_admin_clientes.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_admin_clientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            this.dgv_admin_clientes.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_admin_clientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_admin_clientes.Size = new System.Drawing.Size(542, 351);
             this.dgv_admin_clientes.TabIndex = 1;
@@ -215,7 +216,7 @@ namespace ProyectVisualFerre
             this.Controls.Add(this.txt_BuscarProd);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnl_dgv);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -224,7 +225,7 @@ namespace ProyectVisualFerre
             this.Load += new System.EventHandler(this.Admin_Clientes_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
+            this.pnl_dgv.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_admin_clientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -239,7 +240,7 @@ namespace ProyectVisualFerre
         private System.Windows.Forms.Button btn_mant_eliminar;
         private System.Windows.Forms.Button btn_mant_editar;
         private System.Windows.Forms.Button btn_mant_anadir;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnl_dgv;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;

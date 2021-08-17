@@ -21,8 +21,8 @@ namespace ProyectVisualFerre
         //LOAD
         private void Ventana_admin_Load(object sender, EventArgs e)
         {
-            //btn_inicio_logo(null ,e);
-            
+            btn_inicio_logo_Click(null ,e);
+            btn_inicio_ferre_Click(null, e);
         }
         //FIN LOAD
 

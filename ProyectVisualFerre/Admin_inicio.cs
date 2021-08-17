@@ -25,8 +25,10 @@ namespace ProyectVisualFerre
 
         private void Admin_Inicio_Load(object sender, EventArgs e)
         {
-            lbl_hora.Text = DateTime.Now.ToString("HH:mm:ss");
-            lbl_fecha.Text = DateTime.Now.ToString("dddd MMMM yyy");
+            //lbl_hora.Text = DateTime.Now.ToString();
+            //lbl_fecha.Text = DateTime.Now.ToString();
+            ////tm_hora_fecha_Tick(null, e);
         }
+
     }
 }
