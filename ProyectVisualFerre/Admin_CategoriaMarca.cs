@@ -16,5 +16,11 @@ namespace ProyectVisualFerre
         {
             InitializeComponent();
         }
+
+        private void Admin_CategoriaMarca_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

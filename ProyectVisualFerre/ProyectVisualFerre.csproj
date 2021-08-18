@@ -122,6 +122,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin_CategoriaMarca.resx">
+      <DependentUpon>Admin_CategoriaMarca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_Clientes.resx">
       <DependentUpon>Admin_Clientes.cs</DependentUpon>
     </EmbeddedResource>
