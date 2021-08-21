@@ -27,7 +27,7 @@ namespace ProyectVisualFerre
         {
             //lbl_hora.Text = DateTime.Now.ToString();
             //lbl_fecha.Text = DateTime.Now.ToString();
-            ////tm_hora_fecha_Tick(null, e);
+            tm_hora_fecha_Tick(null, e);
         }
 
     }

@@ -332,10 +332,10 @@ namespace ProyectVisualFerre
             // 
             this.pl_barra_titulo.BackColor = System.Drawing.Color.DarkSlateGray;
             this.pl_barra_titulo.Controls.Add(this.btn_menu_slide);
-            this.pl_barra_titulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pl_barra_titulo.Dock = System.Windows.Forms.DockStyle.Left;
             this.pl_barra_titulo.Location = new System.Drawing.Point(220, 30);
             this.pl_barra_titulo.Name = "pl_barra_titulo";
-            this.pl_barra_titulo.Size = new System.Drawing.Size(780, 45);
+            this.pl_barra_titulo.Size = new System.Drawing.Size(46, 570);
             this.pl_barra_titulo.TabIndex = 3;
             // 
             // btn_menu_slide
