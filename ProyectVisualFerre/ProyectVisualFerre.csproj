@@ -66,6 +66,12 @@
     <Compile Include="Admin_Estadisticas.Designer.cs">
       <DependentUpon>Admin_Estadisticas.cs</DependentUpon>
     </Compile>
+    <Compile Include="admin_FormClientesCrear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_FormClientesCrear.Designer.cs">
+      <DependentUpon>admin_FormClientesCrear.cs</DependentUpon>
+    </Compile>
     <Compile Include="admin_FormClientesEditar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,11 +84,17 @@
     <Compile Include="admin_FormComprobanteVenta.Designer.cs">
       <DependentUpon>admin_FormComprobanteVenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="admin_FormCrearEditar.cs">
+    <Compile Include="admin_FormProdCrear.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="admin_FormCrearEditar.Designer.cs">
-      <DependentUpon>admin_FormCrearEditar.cs</DependentUpon>
+    <Compile Include="admin_FormProdCrear.Designer.cs">
+      <DependentUpon>admin_FormProdCrear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_FormProdEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_FormProdEdit.Designer.cs">
+      <DependentUpon>admin_FormProdEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin_Inicio.cs">
       <SubType>Form</SubType>
@@ -150,14 +162,20 @@
     <EmbeddedResource Include="Admin_Estadisticas.resx">
       <DependentUpon>Admin_Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="admin_FormClientesCrear.resx">
+      <DependentUpon>admin_FormClientesCrear.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="admin_FormClientesEditar.resx">
       <DependentUpon>admin_FormClientesEditar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="admin_FormComprobanteVenta.resx">
       <DependentUpon>admin_FormComprobanteVenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="admin_FormCrearEditar.resx">
-      <DependentUpon>admin_FormCrearEditar.cs</DependentUpon>
+    <EmbeddedResource Include="admin_FormProdCrear.resx">
+      <DependentUpon>admin_FormProdCrear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_FormProdEdit.resx">
+      <DependentUpon>admin_FormProdEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_Inicio.resx">
       <DependentUpon>Admin_Inicio.cs</DependentUpon>

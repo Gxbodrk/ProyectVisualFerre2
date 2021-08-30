@@ -27,7 +27,22 @@ namespace ProyectVisualFerre
         //Track bar scroll edad
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
-            txt_edad.Text = trackBar1.Value.ToString();
+            txt_edit_edad.Text = trackBar1.Value.ToString();
+        }
+
+        private void btn_guardar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

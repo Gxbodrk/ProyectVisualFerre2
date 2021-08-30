@@ -27,7 +27,7 @@ namespace ProyectVisualFerre
          //Boton nuevo producto
         private void btn_prod_nuevo_Click(object sender, EventArgs e)
         {
-            admin_FormCrearEditar frm_crear = new admin_FormCrearEditar();
+            admin_FormProdCrear frm_crear = new admin_FormProdCrear();
             frm_crear.ShowDialog();
         }
         //fin boton
@@ -35,15 +35,18 @@ namespace ProyectVisualFerre
         //boton editar producto
         private void btn_prod_editar_Click(object sender, EventArgs e)
         {
-            if (dgv_admin_productos.SelectedRows.Count > 0)
-            {
-                admin_FormCrearEditar frm_editar = new admin_FormCrearEditar();
-                frm_editar.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Seleccione una fila para poder editar el producto");
-            }
+
+            admin_FormProdEdit frm_editar = new admin_FormProdEdit();
+            frm_editar.ShowDialog();
+            //if (dgv_admin_productos.SelectedRows.Count > 0)
+            //{
+            //    admin_FormProdEdit frm_editar = new admin_FormProdEdit();
+            //    frm_editar.ShowDialog();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Seleccione una fila para poder editar el producto");
+            //}
         }
         //fin boton
 

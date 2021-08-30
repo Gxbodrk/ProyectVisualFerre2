@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectVisualFerre
 {
-    public partial class admin_FormCrearEditar : Form
+    public partial class admin_FormProdCrear : Form
     {
-        public admin_FormCrearEditar()
+        public admin_FormProdCrear()
         {
             InitializeComponent();
         }
