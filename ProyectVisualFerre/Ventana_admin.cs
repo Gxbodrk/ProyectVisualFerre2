@@ -153,5 +153,10 @@ namespace ProyectVisualFerre
         {
             Abrir_form_hija(new Admin_Ventas());
         }
+
+        private void btn_admin_CatgMarc_Click(object sender, EventArgs e)
+        {
+            Abrir_form_hija(new Admin_CategoriaMarca());
+        }
     }
 }

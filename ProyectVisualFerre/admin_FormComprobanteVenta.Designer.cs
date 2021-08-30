@@ -29,8 +29,8 @@ namespace ProyectVisualFerre
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin_FormComprobanteVenta));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.txt_regresar = new System.Windows.Forms.Button();
             this.txt_prod = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -44,13 +44,15 @@ namespace ProyectVisualFerre
             this.txt_PrecioVenta = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.txt_regresar);
             this.panel1.Controls.Add(this.txt_prod);
             this.panel1.Controls.Add(this.label14);
@@ -69,13 +71,6 @@ namespace ProyectVisualFerre
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(813, 219);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(619, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(182, 195);
-            this.panel2.TabIndex = 58;
             // 
             // txt_regresar
             // 
@@ -213,6 +208,16 @@ namespace ProyectVisualFerre
             this.label12.TabIndex = 44;
             this.label12.Text = "Precio de venta:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(619, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(182, 174);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 58;
+            this.pictureBox1.TabStop = false;
+            // 
             // admin_FormComprobanteVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -224,6 +229,7 @@ namespace ProyectVisualFerre
             this.Text = "admin_FormComprobanteVenta";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -243,7 +249,7 @@ namespace ProyectVisualFerre
         public System.Windows.Forms.TextBox txt_PrecioVenta;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button txt_regresar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

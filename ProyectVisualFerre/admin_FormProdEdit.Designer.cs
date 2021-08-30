@@ -31,6 +31,7 @@ namespace ProyectVisualFerre
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin_FormProdEdit));
             this.pl_form_abrir_editar = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_limpiar = new System.Windows.Forms.Button();
             this.txt_edit_ProdNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@ namespace ProyectVisualFerre
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pl_form_abrir_editar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -83,6 +83,16 @@ namespace ProyectVisualFerre
             this.pl_form_abrir_editar.Name = "pl_form_abrir_editar";
             this.pl_form_abrir_editar.Size = new System.Drawing.Size(809, 286);
             this.pl_form_abrir_editar.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(587, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(210, 203);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
             // 
             // btn_limpiar
             // 
@@ -280,16 +290,6 @@ namespace ProyectVisualFerre
             this.label2.TabIndex = 2;
             this.label2.Text = "Descripción:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(587, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(210, 203);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
-            // 
             // admin_FormProdEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -297,6 +297,7 @@ namespace ProyectVisualFerre
             this.ClientSize = new System.Drawing.Size(809, 286);
             this.Controls.Add(this.pl_form_abrir_editar);
             this.Name = "admin_FormProdEdit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "admin_FormProdEdit";
             this.pl_form_abrir_editar.ResumeLayout(false);
             this.pl_form_abrir_editar.PerformLayout();
