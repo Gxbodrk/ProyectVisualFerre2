@@ -38,6 +38,8 @@ namespace ProyectVisualFerre
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl_inten = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.lkl_regis = new System.Windows.Forms.LinkLabel();
             this.txt_pass = new System.Windows.Forms.TextBox();
             this.btn_ingresar = new System.Windows.Forms.Button();
@@ -45,7 +47,6 @@ namespace ProyectVisualFerre
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lbl_inten = new System.Windows.Forms.Label();
             this.pl_barra.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_maximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_min)).BeginInit();
@@ -54,6 +55,7 @@ namespace ProyectVisualFerre
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -136,6 +138,7 @@ namespace ProyectVisualFerre
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -147,104 +150,13 @@ namespace ProyectVisualFerre
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.lbl_inten);
-            this.panel2.Controls.Add(this.lkl_regis);
-            this.panel2.Controls.Add(this.txt_pass);
-            this.panel2.Controls.Add(this.btn_ingresar);
-            this.panel2.Controls.Add(this.txt_usuario);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(281, 30);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(519, 420);
             this.panel2.TabIndex = 3;
-            // 
-            // lkl_regis
-            // 
-            this.lkl_regis.AutoSize = true;
-            this.lkl_regis.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lkl_regis.ForeColor = System.Drawing.Color.White;
-            this.lkl_regis.LinkColor = System.Drawing.Color.White;
-            this.lkl_regis.Location = new System.Drawing.Point(181, 343);
-            this.lkl_regis.Name = "lkl_regis";
-            this.lkl_regis.Size = new System.Drawing.Size(148, 31);
-            this.lkl_regis.TabIndex = 10;
-            this.lkl_regis.TabStop = true;
-            this.lkl_regis.Text = "Registrarse";
-            this.lkl_regis.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkl_regis_LinkClicked);
-            // 
-            // txt_pass
-            // 
-            this.txt_pass.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pass.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_pass.Location = new System.Drawing.Point(187, 201);
-            this.txt_pass.Name = "txt_pass";
-            this.txt_pass.Size = new System.Drawing.Size(236, 39);
-            this.txt_pass.TabIndex = 2;
-            this.txt_pass.Text = "Contraseña";
-            this.txt_pass.Enter += new System.EventHandler(this.txt_pass_Enter);
-            this.txt_pass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_pass_KeyPress);
-            this.txt_pass.Leave += new System.EventHandler(this.txt_pass_Leave);
-            // 
-            // btn_ingresar
-            // 
-            this.btn_ingresar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_ingresar.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ingresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_ingresar.Location = new System.Drawing.Point(154, 280);
-            this.btn_ingresar.Name = "btn_ingresar";
-            this.btn_ingresar.Size = new System.Drawing.Size(199, 47);
-            this.btn_ingresar.TabIndex = 0;
-            this.btn_ingresar.Text = "Ingresar";
-            this.btn_ingresar.UseVisualStyleBackColor = false;
-            this.btn_ingresar.Click += new System.EventHandler(this.btn_ingresar_Click);
-            // 
-            // txt_usuario
-            // 
-            this.txt_usuario.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_usuario.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_usuario.Location = new System.Drawing.Point(187, 98);
-            this.txt_usuario.Name = "txt_usuario";
-            this.txt_usuario.Size = new System.Drawing.Size(236, 39);
-            this.txt_usuario.TabIndex = 1;
-            this.txt_usuario.Text = "Usuario";
-            this.txt_usuario.Enter += new System.EventHandler(this.txt_usu_Enter);
-            this.txt_usuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_usuario_KeyPress);
-            this.txt_usuario.Leave += new System.EventHandler(this.txt_usu_Leave);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(66, 188);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(95, 66);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(66, 85);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(95, 66);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.label1.Font = new System.Drawing.Font("Algerian", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(122, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(276, 39);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "INICIAR SESION";
             // 
             // lbl_inten
             // 
@@ -254,6 +166,107 @@ namespace ProyectVisualFerre
             this.lbl_inten.Name = "lbl_inten";
             this.lbl_inten.Size = new System.Drawing.Size(0, 13);
             this.lbl_inten.TabIndex = 11;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel3.Controls.Add(this.lkl_regis);
+            this.panel3.Controls.Add(this.txt_pass);
+            this.panel3.Controls.Add(this.btn_ingresar);
+            this.panel3.Controls.Add(this.txt_usuario);
+            this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(6, 6);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(501, 402);
+            this.panel3.TabIndex = 12;
+            // 
+            // lkl_regis
+            // 
+            this.lkl_regis.AutoSize = true;
+            this.lkl_regis.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lkl_regis.ForeColor = System.Drawing.Color.White;
+            this.lkl_regis.LinkColor = System.Drawing.Color.White;
+            this.lkl_regis.Location = new System.Drawing.Point(187, 344);
+            this.lkl_regis.Name = "lkl_regis";
+            this.lkl_regis.Size = new System.Drawing.Size(148, 31);
+            this.lkl_regis.TabIndex = 17;
+            this.lkl_regis.TabStop = true;
+            this.lkl_regis.Text = "Registrarse";
+            this.lkl_regis.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkl_regis_LinkClicked_1);
+            // 
+            // txt_pass
+            // 
+            this.txt_pass.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pass.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_pass.Location = new System.Drawing.Point(193, 202);
+            this.txt_pass.Name = "txt_pass";
+            this.txt_pass.Size = new System.Drawing.Size(236, 39);
+            this.txt_pass.TabIndex = 13;
+            this.txt_pass.Text = "Contraseña";
+            this.txt_pass.Enter += new System.EventHandler(this.txt_pass_Enter_1);
+            this.txt_pass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_pass_KeyPress_1);
+            this.txt_pass.Leave += new System.EventHandler(this.txt_pass_Leave_1);
+            // 
+            // btn_ingresar
+            // 
+            this.btn_ingresar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_ingresar.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ingresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_ingresar.Location = new System.Drawing.Point(160, 281);
+            this.btn_ingresar.Name = "btn_ingresar";
+            this.btn_ingresar.Size = new System.Drawing.Size(199, 47);
+            this.btn_ingresar.TabIndex = 11;
+            this.btn_ingresar.Text = "Ingresar";
+            this.btn_ingresar.UseVisualStyleBackColor = false;
+            this.btn_ingresar.Click += new System.EventHandler(this.btn_ingresar_Click_1);
+            // 
+            // txt_usuario
+            // 
+            this.txt_usuario.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_usuario.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_usuario.Location = new System.Drawing.Point(193, 99);
+            this.txt_usuario.Name = "txt_usuario";
+            this.txt_usuario.Size = new System.Drawing.Size(236, 39);
+            this.txt_usuario.TabIndex = 12;
+            this.txt_usuario.Text = "Usuario";
+            this.txt_usuario.TextChanged += new System.EventHandler(this.txt_usuario_TextChanged);
+            this.txt_usuario.Enter += new System.EventHandler(this.txt_usuario_Enter_1);
+            this.txt_usuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_usuario_KeyPress_1);
+            this.txt_usuario.Leave += new System.EventHandler(this.txt_usuario_Leave_1);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(72, 189);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(95, 66);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 16;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(72, 86);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(95, 66);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.label1.Font = new System.Drawing.Font("Algerian", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(128, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(276, 39);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "INICIAR SESION";
             // 
             // Login
             // 
@@ -276,6 +289,8 @@ namespace ProyectVisualFerre
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -292,13 +307,14 @@ namespace ProyectVisualFerre
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbl_inten;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.LinkLabel lkl_regis;
         public System.Windows.Forms.TextBox txt_pass;
         private System.Windows.Forms.Button btn_ingresar;
         public System.Windows.Forms.TextBox txt_usuario;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.LinkLabel lkl_regis;
-        private System.Windows.Forms.Label lbl_inten;
     }
 }

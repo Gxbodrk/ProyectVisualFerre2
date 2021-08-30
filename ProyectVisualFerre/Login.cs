@@ -67,7 +67,8 @@ namespace ProyectVisualFerre
         //FIN PANEL SUPERIOR
 
         //Limpia las letras de la vista
-        private void txt_usu_Enter(object sender, EventArgs e)
+
+        private void txt_usuario_Enter_1(object sender, EventArgs e)
         {
             if (txt_usuario.Text == "Usuario")
             {
@@ -76,16 +77,17 @@ namespace ProyectVisualFerre
             }
         }
 
-        private void txt_usu_Leave(object sender, EventArgs e)
+        private void txt_usuario_Leave_1(object sender, EventArgs e)
         {
-            if (txt_usuario.Text=="")
+            if (txt_usuario.Text == "")
             {
                 txt_usuario.Text = "Usuario";
-                txt_usuario.ForeColor = Color.LightGray;
+                txt_usuario.ForeColor = Color.DimGray;
             }
         }
 
-        private void txt_pass_Enter(object sender, EventArgs e)
+
+        private void txt_pass_Enter_1(object sender, EventArgs e)
         {
             if (txt_pass.Text == "Contraseña")
             {
@@ -95,15 +97,16 @@ namespace ProyectVisualFerre
             }
         }
 
-        private void txt_pass_Leave(object sender, EventArgs e)
+        private void txt_pass_Leave_1(object sender, EventArgs e)
         {
             if (txt_pass.Text == "")
             {
-                txt_pass.Text = "Password";
-                txt_pass.ForeColor = Color.LightGray;
+                txt_pass.Text = "Contraseña";
+                txt_pass.ForeColor = Color.DimGray;
                 txt_pass.UseSystemPasswordChar = false;
             }
         }
+
 
         public void logear(string nombre, string passw)
         {
@@ -221,8 +224,53 @@ namespace ProyectVisualFerre
             }
         }
 
+        private void txt_usuario_TextChanged(object sender, EventArgs e)
+        {
 
-        private void btn_ingresar_Click(object sender, EventArgs e)
+        }
+
+        private void txt_usuario_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            //Codigo para acceder a la tecla enter 
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                //Validamos para q no ingrese campos vacion
+                if (txt_usuario.Text == "" || txt_pass.Text == "")
+                {
+                    MessageBox.Show("Ingrese datos en los campos");
+                }
+                else
+                {
+                    logear(txt_usuario.Text, txt_pass.Text);
+                }
+            }
+        }
+
+        private void txt_pass_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            //Codigo para acceder a la tecla enter 
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                //Validamos para q no ingrese campos vacion
+                if (txt_usuario.Text == "" || txt_pass.Text == "")
+                {
+                    MessageBox.Show("Ingrese datos en los campos");
+                }
+                else
+                {
+                    logear(txt_usuario.Text, txt_pass.Text);
+                }
+            }
+        }
+
+        private void lkl_regis_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Registrarse_Usuario registrarse = new Registrarse_Usuario();
+            registrarse.Show();
+            this.Hide();
+        }
+
+        private void btn_ingresar_Click_1(object sender, EventArgs e)
         {
             //Validamos para q no ingrese campos vacion
             if (txt_usuario.Text == "" || txt_pass.Text == "")
@@ -231,56 +279,13 @@ namespace ProyectVisualFerre
                 txt_usuario.ForeColor = Color.DimGray;
                 txt_pass.Text = "Contraseña";
                 txt_pass.ForeColor = Color.DimGray;
-                txt_pass.UseSystemPasswordChar = false;
+                txt_pass.UseSystemPasswordChar = true;
                 MessageBox.Show("Ingrese datos en los campos");
             }
             else
             {
 
                 logear(txt_usuario.Text, txt_pass.Text);
-            }
-        }
-
-        private void lkl_regis_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Registrarse_Usuario registrarse = new Registrarse_Usuario();
-            registrarse.Show();
-            this.Hide();
-        }
-
-        private void txt_usuario_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //Codigo para acceder a la tecla enter 
-            if (e.KeyChar == Convert.ToChar(Keys.Enter))
-            {
-                //Validamos para q no ingrese campos vacion
-                if (txt_usuario.Text == "" || txt_pass.Text == "")
-                {
-                    MessageBox.Show("Ingrese datos en los campos");
-
-                }
-                else
-                {
-                    logear(txt_usuario.Text, txt_pass.Text);
-                }
-            }
-        }
-
-        private void txt_pass_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //Codigo para acceder a la tecla enter 
-            if (e.KeyChar == Convert.ToChar(Keys.Enter))
-            {
-                //Validamos para q no ingrese campos vacion
-                if (txt_usuario.Text == "" || txt_pass.Text == "")
-                {
-                    MessageBox.Show("Ingrese datos en los campos");
-
-                }
-                else
-                {
-                    logear(txt_usuario.Text, txt_pass.Text);
-                }
             }
         }
     }
