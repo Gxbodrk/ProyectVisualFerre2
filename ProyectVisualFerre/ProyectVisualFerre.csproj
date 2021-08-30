@@ -102,6 +102,7 @@
     <Compile Include="Admin_Ventas.Designer.cs">
       <DependentUpon>Admin_Ventas.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConexionBD.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
