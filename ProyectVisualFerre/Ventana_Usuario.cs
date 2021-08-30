@@ -22,6 +22,7 @@ namespace ProyectVisualFerre
         private void Ventana_Usuario_Load(object sender, EventArgs e)
         {
             btn_carrito_slide_Click(null, e);
+            btn_inicio_ferre_Click(null, e);
         }
         //FIN LOAD
 
@@ -142,6 +143,7 @@ namespace ProyectVisualFerre
 
         private void btn_usu_prod_Click(object sender, EventArgs e)
         {
+            btn_menu_slide_Click(null, e);
             Abrir_form_hija(new Usuario_Productos());
 
         }
