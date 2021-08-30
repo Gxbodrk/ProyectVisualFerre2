@@ -16,7 +16,7 @@ namespace ProyectVisualFerre
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ventana_Usuario());
+            Application.Run(new Login());
         }
     }
 }

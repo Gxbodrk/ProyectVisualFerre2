@@ -41,10 +41,11 @@ namespace ProyectVisualFerre
             this.lkl_regis = new System.Windows.Forms.LinkLabel();
             this.txt_pass = new System.Windows.Forms.TextBox();
             this.btn_ingresar = new System.Windows.Forms.Button();
-            this.txt_usu = new System.Windows.Forms.TextBox();
+            this.txt_usuario = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbl_inten = new System.Windows.Forms.Label();
             this.pl_barra.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_maximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_min)).BeginInit();
@@ -146,10 +147,11 @@ namespace ProyectVisualFerre
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel2.Controls.Add(this.lbl_inten);
             this.panel2.Controls.Add(this.lkl_regis);
             this.panel2.Controls.Add(this.txt_pass);
             this.panel2.Controls.Add(this.btn_ingresar);
-            this.panel2.Controls.Add(this.txt_usu);
+            this.panel2.Controls.Add(this.txt_usuario);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.label1);
@@ -176,12 +178,14 @@ namespace ProyectVisualFerre
             // txt_pass
             // 
             this.txt_pass.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pass.ForeColor = System.Drawing.Color.DimGray;
             this.txt_pass.Location = new System.Drawing.Point(187, 201);
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.Size = new System.Drawing.Size(236, 39);
-            this.txt_pass.TabIndex = 9;
-            this.txt_pass.Text = "Password";
+            this.txt_pass.TabIndex = 2;
+            this.txt_pass.Text = "Contraseña";
             this.txt_pass.Enter += new System.EventHandler(this.txt_pass_Enter);
+            this.txt_pass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_pass_KeyPress);
             this.txt_pass.Leave += new System.EventHandler(this.txt_pass_Leave);
             // 
             // btn_ingresar
@@ -192,21 +196,23 @@ namespace ProyectVisualFerre
             this.btn_ingresar.Location = new System.Drawing.Point(154, 280);
             this.btn_ingresar.Name = "btn_ingresar";
             this.btn_ingresar.Size = new System.Drawing.Size(199, 47);
-            this.btn_ingresar.TabIndex = 8;
+            this.btn_ingresar.TabIndex = 0;
             this.btn_ingresar.Text = "Ingresar";
             this.btn_ingresar.UseVisualStyleBackColor = false;
             this.btn_ingresar.Click += new System.EventHandler(this.btn_ingresar_Click);
             // 
-            // txt_usu
+            // txt_usuario
             // 
-            this.txt_usu.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_usu.Location = new System.Drawing.Point(187, 98);
-            this.txt_usu.Name = "txt_usu";
-            this.txt_usu.Size = new System.Drawing.Size(236, 39);
-            this.txt_usu.TabIndex = 6;
-            this.txt_usu.Text = "Usuario";
-            this.txt_usu.Enter += new System.EventHandler(this.txt_usu_Enter);
-            this.txt_usu.Leave += new System.EventHandler(this.txt_usu_Leave);
+            this.txt_usuario.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_usuario.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_usuario.Location = new System.Drawing.Point(187, 98);
+            this.txt_usuario.Name = "txt_usuario";
+            this.txt_usuario.Size = new System.Drawing.Size(236, 39);
+            this.txt_usuario.TabIndex = 1;
+            this.txt_usuario.Text = "Usuario";
+            this.txt_usuario.Enter += new System.EventHandler(this.txt_usu_Enter);
+            this.txt_usuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_usuario_KeyPress);
+            this.txt_usuario.Leave += new System.EventHandler(this.txt_usu_Leave);
             // 
             // pictureBox3
             // 
@@ -239,6 +245,15 @@ namespace ProyectVisualFerre
             this.label1.Size = new System.Drawing.Size(276, 39);
             this.label1.TabIndex = 2;
             this.label1.Text = "INICIAR SESION";
+            // 
+            // lbl_inten
+            // 
+            this.lbl_inten.AutoSize = true;
+            this.lbl_inten.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lbl_inten.Location = new System.Drawing.Point(429, 367);
+            this.lbl_inten.Name = "lbl_inten";
+            this.lbl_inten.Size = new System.Drawing.Size(0, 13);
+            this.lbl_inten.TabIndex = 11;
             // 
             // Login
             // 
@@ -279,10 +294,11 @@ namespace ProyectVisualFerre
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.TextBox txt_pass;
         private System.Windows.Forms.Button btn_ingresar;
-        public System.Windows.Forms.TextBox txt_usu;
+        public System.Windows.Forms.TextBox txt_usuario;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel lkl_regis;
+        private System.Windows.Forms.Label lbl_inten;
     }
 }
