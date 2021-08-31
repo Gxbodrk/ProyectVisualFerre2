@@ -1,7 +1,7 @@
 ﻿
 namespace ProyectVisualFerre
 {
-    partial class admin_FormClientesCrear
+    partial class admin_FormClientesEdit
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,14 @@ namespace ProyectVisualFerre
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin_FormClientesCrear));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin_FormClientesEdit));
             this.pl_form_abrir_editar = new System.Windows.Forms.Panel();
+            this.txt_Spassw = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txt_email = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_usuario = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.txt_Ppassw = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -44,21 +50,16 @@ namespace ProyectVisualFerre
             this.label9 = new System.Windows.Forms.Label();
             this.txt_cedula = new System.Windows.Forms.TextBox();
             this.txt_edad = new System.Windows.Forms.TextBox();
+            this.txt_Pnombre = new System.Windows.Forms.TextBox();
             this.txt_direc = new System.Windows.Forms.TextBox();
             this.btn_cancelar = new System.Windows.Forms.Button();
-            this.btn_guardar = new System.Windows.Forms.Button();
+            this.btn_Editar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txt_Pnombre = new System.Windows.Forms.TextBox();
-            this.txt_usuario = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_email = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt_Spassw = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.btn_limpiar = new System.Windows.Forms.Button();
             this.pl_form_abrir_editar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,6 +68,7 @@ namespace ProyectVisualFerre
             // pl_form_abrir_editar
             // 
             this.pl_form_abrir_editar.BackColor = System.Drawing.Color.White;
+            this.pl_form_abrir_editar.Controls.Add(this.btn_limpiar);
             this.pl_form_abrir_editar.Controls.Add(this.txt_Spassw);
             this.pl_form_abrir_editar.Controls.Add(this.label12);
             this.pl_form_abrir_editar.Controls.Add(this.txt_email);
@@ -89,7 +91,7 @@ namespace ProyectVisualFerre
             this.pl_form_abrir_editar.Controls.Add(this.txt_Pnombre);
             this.pl_form_abrir_editar.Controls.Add(this.txt_direc);
             this.pl_form_abrir_editar.Controls.Add(this.btn_cancelar);
-            this.pl_form_abrir_editar.Controls.Add(this.btn_guardar);
+            this.pl_form_abrir_editar.Controls.Add(this.btn_Editar);
             this.pl_form_abrir_editar.Controls.Add(this.label7);
             this.pl_form_abrir_editar.Controls.Add(this.label6);
             this.pl_form_abrir_editar.Controls.Add(this.label5);
@@ -99,7 +101,61 @@ namespace ProyectVisualFerre
             this.pl_form_abrir_editar.Location = new System.Drawing.Point(0, 0);
             this.pl_form_abrir_editar.Name = "pl_form_abrir_editar";
             this.pl_form_abrir_editar.Size = new System.Drawing.Size(823, 381);
-            this.pl_form_abrir_editar.TabIndex = 2;
+            this.pl_form_abrir_editar.TabIndex = 3;
+            // 
+            // txt_Spassw
+            // 
+            this.txt_Spassw.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Spassw.Location = new System.Drawing.Point(204, 341);
+            this.txt_Spassw.Name = "txt_Spassw";
+            this.txt_Spassw.Size = new System.Drawing.Size(154, 23);
+            this.txt_Spassw.TabIndex = 42;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(30, 344);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(156, 16);
+            this.label12.TabIndex = 41;
+            this.label12.Text = "Confirmar Contraseña:";
+            // 
+            // txt_email
+            // 
+            this.txt_email.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_email.Location = new System.Drawing.Point(150, 266);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(276, 23);
+            this.txt_email.TabIndex = 40;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(30, 268);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 16);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "Email:";
+            // 
+            // txt_usuario
+            // 
+            this.txt_usuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_usuario.Location = new System.Drawing.Point(150, 225);
+            this.txt_usuario.Name = "txt_usuario";
+            this.txt_usuario.Size = new System.Drawing.Size(121, 23);
+            this.txt_usuario.TabIndex = 38;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(30, 227);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 16);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "Usuario:";
             // 
             // trackBar1
             // 
@@ -108,7 +164,6 @@ namespace ProyectVisualFerre
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(324, 45);
             this.trackBar1.TabIndex = 36;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // txt_Ppassw
             // 
@@ -218,6 +273,14 @@ namespace ProyectVisualFerre
             this.txt_edad.TabIndex = 14;
             this.txt_edad.Text = "0";
             // 
+            // txt_Pnombre
+            // 
+            this.txt_Pnombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Pnombre.Location = new System.Drawing.Point(150, 47);
+            this.txt_Pnombre.Name = "txt_Pnombre";
+            this.txt_Pnombre.Size = new System.Drawing.Size(121, 23);
+            this.txt_Pnombre.TabIndex = 13;
+            // 
             // txt_direc
             // 
             this.txt_direc.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -233,28 +296,26 @@ namespace ProyectVisualFerre
             this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cancelar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancelar.ForeColor = System.Drawing.Color.White;
-            this.btn_cancelar.Location = new System.Drawing.Point(700, 317);
+            this.btn_cancelar.Location = new System.Drawing.Point(716, 317);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(95, 28);
             this.btn_cancelar.TabIndex = 10;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = false;
-            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
-            // btn_guardar
+            // btn_Editar
             // 
-            this.btn_guardar.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btn_guardar.FlatAppearance.BorderSize = 0;
-            this.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_guardar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_guardar.ForeColor = System.Drawing.Color.White;
-            this.btn_guardar.Location = new System.Drawing.Point(584, 317);
-            this.btn_guardar.Name = "btn_guardar";
-            this.btn_guardar.Size = new System.Drawing.Size(95, 28);
-            this.btn_guardar.TabIndex = 9;
-            this.btn_guardar.Text = "Guardar";
-            this.btn_guardar.UseVisualStyleBackColor = false;
-            this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
+            this.btn_Editar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_Editar.FlatAppearance.BorderSize = 0;
+            this.btn_Editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Editar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Editar.ForeColor = System.Drawing.Color.White;
+            this.btn_Editar.Location = new System.Drawing.Point(606, 317);
+            this.btn_Editar.Name = "btn_Editar";
+            this.btn_Editar.Size = new System.Drawing.Size(95, 28);
+            this.btn_Editar.TabIndex = 9;
+            this.btn_Editar.Text = "Actualizar";
+            this.btn_Editar.UseVisualStyleBackColor = false;
             // 
             // label7
             // 
@@ -276,6 +337,16 @@ namespace ProyectVisualFerre
             this.label6.TabIndex = 6;
             this.label6.Text = "Edad:";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(30, 49);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(107, 16);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Primer nombre:";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -296,88 +367,29 @@ namespace ProyectVisualFerre
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label5
+            // btn_limpiar
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(30, 49);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 16);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Primer nombre:";
+            this.btn_limpiar.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_limpiar.FlatAppearance.BorderSize = 0;
+            this.btn_limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_limpiar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_limpiar.ForeColor = System.Drawing.Color.White;
+            this.btn_limpiar.Location = new System.Drawing.Point(494, 317);
+            this.btn_limpiar.Name = "btn_limpiar";
+            this.btn_limpiar.Size = new System.Drawing.Size(95, 28);
+            this.btn_limpiar.TabIndex = 43;
+            this.btn_limpiar.Text = "Limpiar";
+            this.btn_limpiar.UseVisualStyleBackColor = false;
             // 
-            // txt_Pnombre
-            // 
-            this.txt_Pnombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Pnombre.Location = new System.Drawing.Point(150, 47);
-            this.txt_Pnombre.Name = "txt_Pnombre";
-            this.txt_Pnombre.Size = new System.Drawing.Size(121, 23);
-            this.txt_Pnombre.TabIndex = 13;
-            // 
-            // txt_usuario
-            // 
-            this.txt_usuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_usuario.Location = new System.Drawing.Point(150, 225);
-            this.txt_usuario.Name = "txt_usuario";
-            this.txt_usuario.Size = new System.Drawing.Size(121, 23);
-            this.txt_usuario.TabIndex = 38;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 227);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 16);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "Usuario:";
-            // 
-            // txt_email
-            // 
-            this.txt_email.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_email.Location = new System.Drawing.Point(150, 266);
-            this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(276, 23);
-            this.txt_email.TabIndex = 40;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(30, 268);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 16);
-            this.label4.TabIndex = 39;
-            this.label4.Text = "Email:";
-            // 
-            // txt_Spassw
-            // 
-            this.txt_Spassw.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Spassw.Location = new System.Drawing.Point(204, 341);
-            this.txt_Spassw.Name = "txt_Spassw";
-            this.txt_Spassw.Size = new System.Drawing.Size(154, 23);
-            this.txt_Spassw.TabIndex = 42;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(30, 344);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(156, 16);
-            this.label12.TabIndex = 41;
-            this.label12.Text = "Confirmar Contraseña:";
-            // 
-            // admin_FormClientesCrear
+            // admin_FormClientesEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(823, 381);
             this.Controls.Add(this.pl_form_abrir_editar);
-            this.Name = "admin_FormClientesCrear";
+            this.Name = "admin_FormClientesEdit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "admin_FormClientesCrear";
-            this.Load += new System.EventHandler(this.admin_FormClientesCrear_Load);
+            this.Text = "admin_FormClientesEdit";
             this.pl_form_abrir_editar.ResumeLayout(false);
             this.pl_form_abrir_editar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
@@ -389,6 +401,12 @@ namespace ProyectVisualFerre
         #endregion
 
         private System.Windows.Forms.Panel pl_form_abrir_editar;
+        public System.Windows.Forms.TextBox txt_Spassw;
+        private System.Windows.Forms.Label label12;
+        public System.Windows.Forms.TextBox txt_email;
+        private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox txt_usuario;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TrackBar trackBar1;
         public System.Windows.Forms.TextBox txt_Ppassw;
         private System.Windows.Forms.Label label8;
@@ -402,20 +420,15 @@ namespace ProyectVisualFerre
         private System.Windows.Forms.Label label9;
         public System.Windows.Forms.TextBox txt_cedula;
         public System.Windows.Forms.TextBox txt_edad;
+        public System.Windows.Forms.TextBox txt_Pnombre;
         public System.Windows.Forms.TextBox txt_direc;
         private System.Windows.Forms.Button btn_cancelar;
-        private System.Windows.Forms.Button btn_guardar;
+        private System.Windows.Forms.Button btn_Editar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        public System.Windows.Forms.TextBox txt_usuario;
-        private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.TextBox txt_Pnombre;
-        private System.Windows.Forms.Label label5;
-        public System.Windows.Forms.TextBox txt_Spassw;
-        private System.Windows.Forms.Label label12;
-        public System.Windows.Forms.TextBox txt_email;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btn_limpiar;
     }
 }

@@ -84,6 +84,12 @@
     <Compile Include="admin_FormClientesCrear.Designer.cs">
       <DependentUpon>admin_FormClientesCrear.cs</DependentUpon>
     </Compile>
+    <Compile Include="admin_FormClientesEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_FormClientesEdit.Designer.cs">
+      <DependentUpon>admin_FormClientesEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="admin_FormComprobanteVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,12 +145,6 @@
       <DependentUpon>Admin_Ventas.cs</DependentUpon>
     </Compile>
     <Compile Include="ConexionBD.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +213,9 @@
     <EmbeddedResource Include="admin_FormClientesCrear.resx">
       <DependentUpon>admin_FormClientesCrear.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="admin_FormClientesEdit.resx">
+      <DependentUpon>admin_FormClientesEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="admin_FormComprobanteVenta.resx">
       <DependentUpon>admin_FormComprobanteVenta.cs</DependentUpon>
     </EmbeddedResource>
@@ -236,9 +239,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_Ventas.resx">
       <DependentUpon>Admin_Ventas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
