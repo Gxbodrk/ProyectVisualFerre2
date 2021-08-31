@@ -30,6 +30,9 @@ namespace ProyectVisualFerre
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Usuario_Productos));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txt_BuscarProd = new System.Windows.Forms.TextBox();
@@ -38,24 +41,30 @@ namespace ProyectVisualFerre
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btn_mant_anadir = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt_vs_ProdDescrp = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.txt_vs_ProdNombre = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_vs_ProdEstado = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_vs_ProdStock = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_vs_ProdPrecio = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_vs_ProdId = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btn_carrito_AgregarProd = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dgv_usu_productos = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_usu_productos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -123,6 +132,7 @@ namespace ProyectVisualFerre
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.dgv_usu_productos);
             this.panel2.Location = new System.Drawing.Point(3, 70);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(671, 382);
@@ -131,19 +141,19 @@ namespace ProyectVisualFerre
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.textBox6);
+            this.panel3.Controls.Add(this.txt_vs_ProdDescrp);
             this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.textBox5);
+            this.panel3.Controls.Add(this.txt_vs_ProdNombre);
             this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.textBox4);
+            this.panel3.Controls.Add(this.txt_vs_ProdEstado);
             this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.txt_vs_ProdStock);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.txt_vs_ProdPrecio);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.txt_vs_ProdId);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.btn_mant_anadir);
+            this.panel3.Controls.Add(this.btn_carrito_AgregarProd);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(731, 106);
@@ -151,136 +161,38 @@ namespace ProyectVisualFerre
             this.panel3.Size = new System.Drawing.Size(352, 452);
             this.panel3.TabIndex = 16;
             // 
-            // label4
+            // txt_vs_ProdDescrp
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(83, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(203, 19);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Vista previa del producto";
+            this.txt_vs_ProdDescrp.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.txt_vs_ProdDescrp.Enabled = false;
+            this.txt_vs_ProdDescrp.ForeColor = System.Drawing.Color.White;
+            this.txt_vs_ProdDescrp.Location = new System.Drawing.Point(96, 293);
+            this.txt_vs_ProdDescrp.Multiline = true;
+            this.txt_vs_ProdDescrp.Name = "txt_vs_ProdDescrp";
+            this.txt_vs_ProdDescrp.Size = new System.Drawing.Size(240, 24);
+            this.txt_vs_ProdDescrp.TabIndex = 26;
             // 
-            // panel4
+            // label10
             // 
-            this.panel4.Location = new System.Drawing.Point(96, 43);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(180, 150);
-            this.panel4.TabIndex = 0;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(4, 294);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(89, 16);
+            this.label10.TabIndex = 25;
+            this.label10.Text = "Descripción:";
             // 
-            // btn_mant_anadir
+            // txt_vs_ProdNombre
             // 
-            this.btn_mant_anadir.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btn_mant_anadir.FlatAppearance.BorderSize = 0;
-            this.btn_mant_anadir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_mant_anadir.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_mant_anadir.ForeColor = System.Drawing.Color.White;
-            this.btn_mant_anadir.Location = new System.Drawing.Point(123, 407);
-            this.btn_mant_anadir.Name = "btn_mant_anadir";
-            this.btn_mant_anadir.Size = new System.Drawing.Size(141, 31);
-            this.btn_mant_anadir.TabIndex = 14;
-            this.btn_mant_anadir.Text = "Añadir al carrito";
-            this.btn_mant_anadir.UseVisualStyleBackColor = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(4, 212);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(25, 16);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "ID:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.textBox1.Enabled = false;
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(73, 211);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(44, 24);
-            this.textBox1.TabIndex = 16;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.textBox2.Enabled = false;
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(74, 340);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(77, 24);
-            this.textBox2.TabIndex = 18;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(4, 341);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 16);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Precio:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.textBox3.Enabled = false;
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(241, 210);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(45, 24);
-            this.textBox3.TabIndex = 20;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(182, 211);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 16);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Stock:";
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.textBox4.Enabled = false;
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(241, 340);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(95, 24);
-            this.textBox4.TabIndex = 22;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(182, 341);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 16);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "Estado:";
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.textBox5.Enabled = false;
-            this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(96, 254);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(121, 24);
-            this.textBox5.TabIndex = 24;
+            this.txt_vs_ProdNombre.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.txt_vs_ProdNombre.Enabled = false;
+            this.txt_vs_ProdNombre.ForeColor = System.Drawing.Color.White;
+            this.txt_vs_ProdNombre.Location = new System.Drawing.Point(96, 254);
+            this.txt_vs_ProdNombre.Multiline = true;
+            this.txt_vs_ProdNombre.Name = "txt_vs_ProdNombre";
+            this.txt_vs_ProdNombre.Size = new System.Drawing.Size(121, 24);
+            this.txt_vs_ProdNombre.TabIndex = 24;
             // 
             // label9
             // 
@@ -293,27 +205,176 @@ namespace ProyectVisualFerre
             this.label9.TabIndex = 23;
             this.label9.Text = "Nombre:";
             // 
-            // textBox6
+            // txt_vs_ProdEstado
             // 
-            this.textBox6.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.textBox6.Enabled = false;
-            this.textBox6.ForeColor = System.Drawing.Color.White;
-            this.textBox6.Location = new System.Drawing.Point(96, 293);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(240, 24);
-            this.textBox6.TabIndex = 26;
+            this.txt_vs_ProdEstado.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.txt_vs_ProdEstado.Enabled = false;
+            this.txt_vs_ProdEstado.ForeColor = System.Drawing.Color.White;
+            this.txt_vs_ProdEstado.Location = new System.Drawing.Point(241, 340);
+            this.txt_vs_ProdEstado.Multiline = true;
+            this.txt_vs_ProdEstado.Name = "txt_vs_ProdEstado";
+            this.txt_vs_ProdEstado.Size = new System.Drawing.Size(95, 24);
+            this.txt_vs_ProdEstado.TabIndex = 22;
             // 
-            // label10
+            // label8
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(4, 294);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(89, 16);
-            this.label10.TabIndex = 25;
-            this.label10.Text = "Descripción:";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(182, 341);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 16);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Estado:";
+            // 
+            // txt_vs_ProdStock
+            // 
+            this.txt_vs_ProdStock.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.txt_vs_ProdStock.Enabled = false;
+            this.txt_vs_ProdStock.ForeColor = System.Drawing.Color.White;
+            this.txt_vs_ProdStock.Location = new System.Drawing.Point(241, 210);
+            this.txt_vs_ProdStock.Multiline = true;
+            this.txt_vs_ProdStock.Name = "txt_vs_ProdStock";
+            this.txt_vs_ProdStock.Size = new System.Drawing.Size(45, 24);
+            this.txt_vs_ProdStock.TabIndex = 20;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(182, 211);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 16);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Stock:";
+            // 
+            // txt_vs_ProdPrecio
+            // 
+            this.txt_vs_ProdPrecio.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.txt_vs_ProdPrecio.Enabled = false;
+            this.txt_vs_ProdPrecio.ForeColor = System.Drawing.Color.White;
+            this.txt_vs_ProdPrecio.Location = new System.Drawing.Point(74, 340);
+            this.txt_vs_ProdPrecio.Multiline = true;
+            this.txt_vs_ProdPrecio.Name = "txt_vs_ProdPrecio";
+            this.txt_vs_ProdPrecio.Size = new System.Drawing.Size(77, 24);
+            this.txt_vs_ProdPrecio.TabIndex = 18;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(4, 341);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 16);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Precio:";
+            // 
+            // txt_vs_ProdId
+            // 
+            this.txt_vs_ProdId.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.txt_vs_ProdId.Enabled = false;
+            this.txt_vs_ProdId.ForeColor = System.Drawing.Color.White;
+            this.txt_vs_ProdId.Location = new System.Drawing.Point(73, 211);
+            this.txt_vs_ProdId.Multiline = true;
+            this.txt_vs_ProdId.Name = "txt_vs_ProdId";
+            this.txt_vs_ProdId.Size = new System.Drawing.Size(44, 24);
+            this.txt_vs_ProdId.TabIndex = 16;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(4, 212);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(25, 16);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "ID:";
+            // 
+            // btn_carrito_AgregarProd
+            // 
+            this.btn_carrito_AgregarProd.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btn_carrito_AgregarProd.FlatAppearance.BorderSize = 0;
+            this.btn_carrito_AgregarProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_carrito_AgregarProd.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_carrito_AgregarProd.ForeColor = System.Drawing.Color.White;
+            this.btn_carrito_AgregarProd.Location = new System.Drawing.Point(123, 407);
+            this.btn_carrito_AgregarProd.Name = "btn_carrito_AgregarProd";
+            this.btn_carrito_AgregarProd.Size = new System.Drawing.Size(141, 31);
+            this.btn_carrito_AgregarProd.TabIndex = 14;
+            this.btn_carrito_AgregarProd.Text = "Añadir al carrito";
+            this.btn_carrito_AgregarProd.UseVisualStyleBackColor = false;
+            this.btn_carrito_AgregarProd.Click += new System.EventHandler(this.btn_carrito_AgregarProd_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.pictureBox1);
+            this.panel4.Location = new System.Drawing.Point(96, 43);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(180, 150);
+            this.panel4.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(83, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(203, 19);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Vista previa del producto";
+            // 
+            // dgv_usu_productos
+            // 
+            this.dgv_usu_productos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgv_usu_productos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgv_usu_productos.BackgroundColor = System.Drawing.Color.DarkSlateGray;
+            this.dgv_usu_productos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_usu_productos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_usu_productos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_usu_productos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.dgv_usu_productos.ColumnHeadersHeight = 25;
+            this.dgv_usu_productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgv_usu_productos.EnableHeadersVisualStyles = false;
+            this.dgv_usu_productos.GridColor = System.Drawing.Color.Teal;
+            this.dgv_usu_productos.Location = new System.Drawing.Point(-4, -1);
+            this.dgv_usu_productos.Name = "dgv_usu_productos";
+            this.dgv_usu_productos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_usu_productos.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
+            this.dgv_usu_productos.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            this.dgv_usu_productos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_usu_productos.Size = new System.Drawing.Size(674, 382);
+            this.dgv_usu_productos.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 150);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Usuario_Productos
             // 
@@ -328,11 +389,16 @@ namespace ProyectVisualFerre
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Usuario_Productos";
             this.Text = "Usuario_Productos";
+            this.Load += new System.EventHandler(this.Usuario_Productos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_usu_productos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -350,18 +416,20 @@ namespace ProyectVisualFerre
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btn_mant_anadir;
+        private System.Windows.Forms.Button btn_carrito_AgregarProd;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_vs_ProdId;
+        private System.Windows.Forms.TextBox txt_vs_ProdNombre;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_vs_ProdEstado;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_vs_ProdStock;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_vs_ProdPrecio;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txt_vs_ProdDescrp;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DataGridView dgv_usu_productos;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

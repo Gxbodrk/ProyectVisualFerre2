@@ -16,5 +16,15 @@ namespace ProyectVisualFerre
         {
             InitializeComponent();
         }
+
+        private void Usuario_Productos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_carrito_AgregarProd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
