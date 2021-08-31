@@ -1,7 +1,7 @@
 ﻿
 namespace ProyectVisualFerre
 {
-    partial class admin_FormClientesEditar
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace ProyectVisualFerre
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin_FormClientesEditar));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pl_form_abrir_editar = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
@@ -88,8 +88,8 @@ namespace ProyectVisualFerre
             this.pl_form_abrir_editar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pl_form_abrir_editar.Location = new System.Drawing.Point(0, 0);
             this.pl_form_abrir_editar.Name = "pl_form_abrir_editar";
-            this.pl_form_abrir_editar.Size = new System.Drawing.Size(823, 361);
-            this.pl_form_abrir_editar.TabIndex = 1;
+            this.pl_form_abrir_editar.Size = new System.Drawing.Size(800, 450);
+            this.pl_form_abrir_editar.TabIndex = 2;
             // 
             // button1
             // 
@@ -104,7 +104,6 @@ namespace ProyectVisualFerre
             this.button1.TabIndex = 37;
             this.button1.Text = "Limpiar";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // trackBar1
             // 
@@ -113,7 +112,6 @@ namespace ProyectVisualFerre
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(324, 45);
             this.trackBar1.TabIndex = 36;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // txt_edit_passw
             // 
@@ -252,7 +250,6 @@ namespace ProyectVisualFerre
             this.btn_cancelar.TabIndex = 10;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = false;
-            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // btn_guardar
             // 
@@ -267,7 +264,6 @@ namespace ProyectVisualFerre
             this.btn_guardar.TabIndex = 9;
             this.btn_guardar.Text = "Actualizar";
             this.btn_guardar.UseVisualStyleBackColor = false;
-            this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
             // 
             // label7
             // 
@@ -319,16 +315,14 @@ namespace ProyectVisualFerre
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // admin_FormClientesEditar
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(823, 361);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pl_form_abrir_editar);
-            this.Name = "admin_FormClientesEditar";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "admin_FormClientesEditar";
-            this.Load += new System.EventHandler(this.admin_FormClientesEditar_Load);
+            this.Name = "Form1";
+            this.Text = "Form1";
             this.pl_form_abrir_editar.ResumeLayout(false);
             this.pl_form_abrir_editar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
@@ -340,6 +334,18 @@ namespace ProyectVisualFerre
         #endregion
 
         private System.Windows.Forms.Panel pl_form_abrir_editar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TrackBar trackBar1;
+        public System.Windows.Forms.TextBox txt_edit_passw;
+        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.TextBox txt_edit_telefono;
+        private System.Windows.Forms.Label label11;
+        public System.Windows.Forms.TextBox txt_edit_Sapellido;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox txt_edit_Papellido;
+        private System.Windows.Forms.Label label10;
+        public System.Windows.Forms.TextBox txt_edit_Snombre;
+        private System.Windows.Forms.Label label9;
         public System.Windows.Forms.TextBox txt_edit_cedula;
         public System.Windows.Forms.TextBox txt_edit_edad;
         public System.Windows.Forms.TextBox txt_edit_Pnombre;
@@ -351,17 +357,5 @@ namespace ProyectVisualFerre
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        public System.Windows.Forms.TextBox txt_edit_passw;
-        private System.Windows.Forms.Label label8;
-        public System.Windows.Forms.TextBox txt_edit_telefono;
-        private System.Windows.Forms.Label label11;
-        public System.Windows.Forms.TextBox txt_edit_Sapellido;
-        private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.TextBox txt_edit_Papellido;
-        private System.Windows.Forms.Label label10;
-        public System.Windows.Forms.TextBox txt_edit_Snombre;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.Button button1;
     }
 }
