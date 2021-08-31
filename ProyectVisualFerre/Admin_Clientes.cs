@@ -27,8 +27,7 @@ namespace ProyectVisualFerre
         //Boton añadir cliente
         private void btn_mant_anadir_Click(object sender, EventArgs e)
         {
-            admin_FormClientesCrear frm_crear_clt = new admin_FormClientesCrear();
-            frm_crear_clt.ShowDialog();
+            
         }
         //Fin boton añadir cliente
 
@@ -38,8 +37,8 @@ namespace ProyectVisualFerre
 
             if (dgv_admin_clientes.SelectedRows.Count > 0)
             {
-                admin_FormClientesEditar frm_editar_clt = new admin_FormClientesEditar();
-                frm_editar_clt.ShowDialog();
+
+                
 
             }
             else
@@ -61,6 +60,8 @@ namespace ProyectVisualFerre
                 MessageBox.Show("Seleccione una fila para poder eliminar el usuario");
             }
         }
+
+       
         //fin boton
     }
 }

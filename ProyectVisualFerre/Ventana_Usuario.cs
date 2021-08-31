@@ -150,12 +150,12 @@ namespace ProyectVisualFerre
 
         private void btn_usu_estadi_Click(object sender, EventArgs e)
         {
-            btn_menu_slide_Click(null, e);
+            Abrir_form_hija(new Usuario_Estadisticas());
         }
 
         private void btn_usu_compb_Click(object sender, EventArgs e)
         {
-            btn_menu_slide_Click(null, e);
+            Abrir_form_hija(new Usuario_Comprobante());
         }
     }
 }

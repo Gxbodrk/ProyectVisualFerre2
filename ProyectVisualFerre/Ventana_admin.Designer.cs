@@ -38,10 +38,6 @@ namespace ProyectVisualFerre
             this.pl_menu_izq = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btn_admin_CatgMarc = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btn_admin_ventas = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_admin_estadi = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -77,7 +73,7 @@ namespace ProyectVisualFerre
             this.pl_barra_superior.Dock = System.Windows.Forms.DockStyle.Top;
             this.pl_barra_superior.Location = new System.Drawing.Point(0, 0);
             this.pl_barra_superior.Name = "pl_barra_superior";
-            this.pl_barra_superior.Size = new System.Drawing.Size(1000, 30);
+            this.pl_barra_superior.Size = new System.Drawing.Size(1200, 30);
             this.pl_barra_superior.TabIndex = 0;
             this.pl_barra_superior.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pl_barra_superior_MouseDown);
             // 
@@ -85,7 +81,7 @@ namespace ProyectVisualFerre
             // 
             this.btn_max.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_max.Image = ((System.Drawing.Image)(resources.GetObject("btn_max.Image")));
-            this.btn_max.Location = new System.Drawing.Point(941, 3);
+            this.btn_max.Location = new System.Drawing.Point(1141, 3);
             this.btn_max.Name = "btn_max";
             this.btn_max.Size = new System.Drawing.Size(25, 25);
             this.btn_max.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -98,7 +94,7 @@ namespace ProyectVisualFerre
             this.btn_minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_minimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_minimizar.Image = ((System.Drawing.Image)(resources.GetObject("btn_minimizar.Image")));
-            this.btn_minimizar.Location = new System.Drawing.Point(910, 3);
+            this.btn_minimizar.Location = new System.Drawing.Point(1110, 3);
             this.btn_minimizar.Name = "btn_minimizar";
             this.btn_minimizar.Size = new System.Drawing.Size(25, 25);
             this.btn_minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -111,7 +107,7 @@ namespace ProyectVisualFerre
             this.btn_restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_restaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_restaurar.Image = ((System.Drawing.Image)(resources.GetObject("btn_restaurar.Image")));
-            this.btn_restaurar.Location = new System.Drawing.Point(941, 3);
+            this.btn_restaurar.Location = new System.Drawing.Point(1141, 3);
             this.btn_restaurar.Name = "btn_restaurar";
             this.btn_restaurar.Size = new System.Drawing.Size(25, 25);
             this.btn_restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -125,7 +121,7 @@ namespace ProyectVisualFerre
             this.btn_cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_cerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_cerrar.Image = ((System.Drawing.Image)(resources.GetObject("btn_cerrar.Image")));
-            this.btn_cerrar.Location = new System.Drawing.Point(972, 3);
+            this.btn_cerrar.Location = new System.Drawing.Point(1172, 3);
             this.btn_cerrar.Name = "btn_cerrar";
             this.btn_cerrar.Size = new System.Drawing.Size(25, 25);
             this.btn_cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -138,10 +134,6 @@ namespace ProyectVisualFerre
             this.pl_menu_izq.BackColor = System.Drawing.Color.Teal;
             this.pl_menu_izq.Controls.Add(this.panel6);
             this.pl_menu_izq.Controls.Add(this.btn_admin_CatgMarc);
-            this.pl_menu_izq.Controls.Add(this.panel5);
-            this.pl_menu_izq.Controls.Add(this.button1);
-            this.pl_menu_izq.Controls.Add(this.panel4);
-            this.pl_menu_izq.Controls.Add(this.btn_admin_ventas);
             this.pl_menu_izq.Controls.Add(this.panel3);
             this.pl_menu_izq.Controls.Add(this.btn_admin_estadi);
             this.pl_menu_izq.Controls.Add(this.panel2);
@@ -154,7 +146,7 @@ namespace ProyectVisualFerre
             this.pl_menu_izq.Dock = System.Windows.Forms.DockStyle.Left;
             this.pl_menu_izq.Location = new System.Drawing.Point(0, 30);
             this.pl_menu_izq.Name = "pl_menu_izq";
-            this.pl_menu_izq.Size = new System.Drawing.Size(220, 570);
+            this.pl_menu_izq.Size = new System.Drawing.Size(220, 670);
             this.pl_menu_izq.TabIndex = 1;
             // 
             // panel6
@@ -182,57 +174,6 @@ namespace ProyectVisualFerre
             this.btn_admin_CatgMarc.Text = "  Categorías y Marcas";
             this.btn_admin_CatgMarc.UseVisualStyleBackColor = true;
             this.btn_admin_CatgMarc.Click += new System.EventHandler(this.btn_admin_CatgMarc_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel5.Location = new System.Drawing.Point(0, 314);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(5, 35);
-            this.panel5.TabIndex = 14;
-            // 
-            // button1
-            // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 314);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 35);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Proveedores";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel4.Location = new System.Drawing.Point(0, 273);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 35);
-            this.panel4.TabIndex = 12;
-            // 
-            // btn_admin_ventas
-            // 
-            this.btn_admin_ventas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_admin_ventas.FlatAppearance.BorderSize = 0;
-            this.btn_admin_ventas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
-            this.btn_admin_ventas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_admin_ventas.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_admin_ventas.ForeColor = System.Drawing.Color.White;
-            this.btn_admin_ventas.Image = ((System.Drawing.Image)(resources.GetObject("btn_admin_ventas.Image")));
-            this.btn_admin_ventas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_admin_ventas.Location = new System.Drawing.Point(3, 273);
-            this.btn_admin_ventas.Name = "btn_admin_ventas";
-            this.btn_admin_ventas.Size = new System.Drawing.Size(216, 35);
-            this.btn_admin_ventas.TabIndex = 11;
-            this.btn_admin_ventas.Text = "Ventas";
-            this.btn_admin_ventas.UseVisualStyleBackColor = true;
-            this.btn_admin_ventas.Click += new System.EventHandler(this.btn_admin_ventas_Click);
             // 
             // panel3
             // 
@@ -291,7 +232,7 @@ namespace ProyectVisualFerre
             this.btn_salir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_salir.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btn_salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_salir.Image")));
-            this.btn_salir.Location = new System.Drawing.Point(0, 530);
+            this.btn_salir.Location = new System.Drawing.Point(0, 630);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(220, 40);
             this.btn_salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -355,7 +296,7 @@ namespace ProyectVisualFerre
             this.pl_contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pl_contenedor.Location = new System.Drawing.Point(220, 30);
             this.pl_contenedor.Name = "pl_contenedor";
-            this.pl_contenedor.Size = new System.Drawing.Size(780, 570);
+            this.pl_contenedor.Size = new System.Drawing.Size(980, 670);
             this.pl_contenedor.TabIndex = 2;
             // 
             // pl_barra_titulo
@@ -365,7 +306,7 @@ namespace ProyectVisualFerre
             this.pl_barra_titulo.Dock = System.Windows.Forms.DockStyle.Left;
             this.pl_barra_titulo.Location = new System.Drawing.Point(220, 30);
             this.pl_barra_titulo.Name = "pl_barra_titulo";
-            this.pl_barra_titulo.Size = new System.Drawing.Size(46, 570);
+            this.pl_barra_titulo.Size = new System.Drawing.Size(46, 670);
             this.pl_barra_titulo.TabIndex = 3;
             // 
             // btn_menu_slide
@@ -384,7 +325,7 @@ namespace ProyectVisualFerre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.ClientSize = new System.Drawing.Size(1200, 700);
             this.Controls.Add(this.pl_barra_titulo);
             this.Controls.Add(this.pl_contenedor);
             this.Controls.Add(this.pl_menu_izq);
@@ -427,12 +368,8 @@ namespace ProyectVisualFerre
         private System.Windows.Forms.PictureBox btn_salir;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_admin_clt;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btn_admin_ventas;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btn_admin_estadi;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btn_admin_CatgMarc;
     }

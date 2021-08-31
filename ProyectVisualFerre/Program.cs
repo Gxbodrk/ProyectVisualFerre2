@@ -19,7 +19,7 @@ namespace ProyectVisualFerre
             //Application.Run(new Login());
 
             //para hacer pruebas
-            Application.Run(new Ventana_Usuario());
+            Application.Run(new Ventana_admin());
         }
     }
 }

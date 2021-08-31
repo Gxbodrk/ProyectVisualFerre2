@@ -66,66 +66,6 @@
     <Compile Include="Admin_Estadisticas.Designer.cs">
       <DependentUpon>Admin_Estadisticas.cs</DependentUpon>
     </Compile>
-    <Compile Include="admin_FormCatgCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin_FormCatgCrear.Designer.cs">
-      <DependentUpon>admin_FormCatgCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin_FormCatgEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin_FormCatgEdit.Designer.cs">
-      <DependentUpon>admin_FormCatgEdit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin_FormClientesCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin_FormClientesCrear.Designer.cs">
-      <DependentUpon>admin_FormClientesCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin_FormClientesEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin_FormClientesEdit.Designer.cs">
-      <DependentUpon>admin_FormClientesEdit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin_FormComprobanteVenta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin_FormComprobanteVenta.Designer.cs">
-      <DependentUpon>admin_FormComprobanteVenta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin_FormCompVenta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin_FormCompVenta.Designer.cs">
-      <DependentUpon>admin_FormCompVenta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin_FormMcCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin_FormMcCrear.Designer.cs">
-      <DependentUpon>admin_FormMcCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin_FormMcEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin_FormMcEdit.Designer.cs">
-      <DependentUpon>admin_FormMcEdit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin_FormProdCrear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin_FormProdCrear.Designer.cs">
-      <DependentUpon>admin_FormProdCrear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin_FormProdEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin_FormProdEdit.Designer.cs">
-      <DependentUpon>admin_FormProdEdit.cs</DependentUpon>
-    </Compile>
     <Compile Include="Admin_Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,12 +77,6 @@
     </Compile>
     <Compile Include="Admin_Productos.Designer.cs">
       <DependentUpon>Admin_Productos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin_Ventas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin_Ventas.Designer.cs">
-      <DependentUpon>Admin_Ventas.cs</DependentUpon>
     </Compile>
     <Compile Include="ConexionBD.cs" />
     <Compile Include="Login.cs">
@@ -204,41 +138,11 @@
     <EmbeddedResource Include="Admin_Estadisticas.resx">
       <DependentUpon>Admin_Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="admin_FormCatgCrear.resx">
-      <DependentUpon>admin_FormCatgCrear.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="admin_FormCatgEdit.resx">
-      <DependentUpon>admin_FormCatgEdit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="admin_FormClientesCrear.resx">
-      <DependentUpon>admin_FormClientesCrear.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="admin_FormClientesEdit.resx">
-      <DependentUpon>admin_FormClientesEdit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="admin_FormComprobanteVenta.resx">
-      <DependentUpon>admin_FormComprobanteVenta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="admin_FormMcCrear.resx">
-      <DependentUpon>admin_FormMcCrear.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="admin_FormMcEdit.resx">
-      <DependentUpon>admin_FormMcEdit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="admin_FormProdCrear.resx">
-      <DependentUpon>admin_FormProdCrear.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="admin_FormProdEdit.resx">
-      <DependentUpon>admin_FormProdEdit.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Admin_Inicio.resx">
       <DependentUpon>Admin_Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_Productos.resx">
       <DependentUpon>Admin_Productos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin_Ventas.resx">
-      <DependentUpon>Admin_Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -248,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Usuario_Comprobante.resx">
       <DependentUpon>Usuario_Comprobante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario_Estadisticas.resx">
+      <DependentUpon>Usuario_Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Usuario_Inicio.resx">
       <DependentUpon>Usuario_Inicio.cs</DependentUpon>
