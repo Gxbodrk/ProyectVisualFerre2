@@ -19,12 +19,13 @@ namespace ProyectVisualFerre
 
         private void Usuario_Productos_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btn_carrito_AgregarProd_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Añadido Exitosamente");
+            txt_vs_ProdNombre.Text = txt_vs_ProdDescrp.Text = txt_vs_ProdId.Text = txt_vs_ProdStock.Text = txt_vs_ProdPrecio.Text = txt_vs_ProdEstado.Text = " ";
         }
     }
 }

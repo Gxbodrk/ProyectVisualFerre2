@@ -37,8 +37,6 @@ namespace ProyectVisualFerre
             this.btn_carrito_slide = new System.Windows.Forms.PictureBox();
             this.pl_derch_carrito = new System.Windows.Forms.Panel();
             this.pl_menu_izq = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_usu_compb = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_usu_estadi = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.PictureBox();
@@ -132,8 +130,6 @@ namespace ProyectVisualFerre
             // pl_menu_izq
             // 
             this.pl_menu_izq.BackColor = System.Drawing.Color.Teal;
-            this.pl_menu_izq.Controls.Add(this.panel2);
-            this.pl_menu_izq.Controls.Add(this.btn_usu_compb);
             this.pl_menu_izq.Controls.Add(this.panel3);
             this.pl_menu_izq.Controls.Add(this.btn_usu_estadi);
             this.pl_menu_izq.Controls.Add(this.btn_salir);
@@ -146,32 +142,6 @@ namespace ProyectVisualFerre
             this.pl_menu_izq.Name = "pl_menu_izq";
             this.pl_menu_izq.Size = new System.Drawing.Size(220, 570);
             this.pl_menu_izq.TabIndex = 5;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel2.Location = new System.Drawing.Point(1, 191);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(5, 35);
-            this.panel2.TabIndex = 12;
-            // 
-            // btn_usu_compb
-            // 
-            this.btn_usu_compb.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_usu_compb.FlatAppearance.BorderSize = 0;
-            this.btn_usu_compb.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateGray;
-            this.btn_usu_compb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_usu_compb.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_usu_compb.ForeColor = System.Drawing.Color.White;
-            this.btn_usu_compb.Image = ((System.Drawing.Image)(resources.GetObject("btn_usu_compb.Image")));
-            this.btn_usu_compb.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_usu_compb.Location = new System.Drawing.Point(4, 191);
-            this.btn_usu_compb.Name = "btn_usu_compb";
-            this.btn_usu_compb.Size = new System.Drawing.Size(216, 35);
-            this.btn_usu_compb.TabIndex = 11;
-            this.btn_usu_compb.Text = "Comprobante";
-            this.btn_usu_compb.UseVisualStyleBackColor = true;
-            this.btn_usu_compb.Click += new System.EventHandler(this.btn_usu_compb_Click);
             // 
             // panel3
             // 
@@ -381,8 +351,6 @@ namespace ProyectVisualFerre
         private System.Windows.Forms.PictureBox btn_cerrar;
         private System.Windows.Forms.Panel pl_derch_carrito;
         private System.Windows.Forms.Panel pl_barra_carrito;
-        private System.Windows.Forms.PictureBox btn_carrito_slide;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_usu_compb;
+        public System.Windows.Forms.PictureBox btn_carrito_slide;
     }
 }

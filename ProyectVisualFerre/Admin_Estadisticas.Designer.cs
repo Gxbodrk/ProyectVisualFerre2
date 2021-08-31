@@ -39,10 +39,6 @@ namespace ProyectVisualFerre
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -61,8 +57,6 @@ namespace ProyectVisualFerre
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
@@ -78,7 +72,7 @@ namespace ProyectVisualFerre
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(290, 79);
+            this.label1.Location = new System.Drawing.Point(373, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(189, 32);
             this.label1.TabIndex = 1;
@@ -87,13 +81,12 @@ namespace ProyectVisualFerre
             // panel1
             // 
             this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(12, 144);
+            this.panel1.Location = new System.Drawing.Point(41, 144);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(418, 375);
+            this.panel1.Size = new System.Drawing.Size(909, 151);
             this.panel1.TabIndex = 2;
             // 
             // panel6
@@ -102,7 +95,7 @@ namespace ProyectVisualFerre
             this.panel6.Controls.Add(this.label10);
             this.panel6.Controls.Add(this.pictureBox5);
             this.panel6.Controls.Add(this.label11);
-            this.panel6.Location = new System.Drawing.Point(214, 253);
+            this.panel6.Location = new System.Drawing.Point(691, 30);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(195, 75);
             this.panel6.TabIndex = 7;
@@ -139,56 +132,13 @@ namespace ProyectVisualFerre
             this.label11.TabIndex = 1;
             this.label11.Text = "N° Categorías";
             // 
-            // panel5
-            // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label8);
-            this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.label9);
-            this.panel5.Location = new System.Drawing.Point(13, 140);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(195, 75);
-            this.panel5.TabIndex = 6;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label8.Location = new System.Drawing.Point(81, 36);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(18, 19);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "0";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(75, 75);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label9.Location = new System.Drawing.Point(81, 11);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(106, 16);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "N° Proveedores";
-            // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Controls.Add(this.label7);
-            this.panel4.Location = new System.Drawing.Point(14, 253);
+            this.panel4.Location = new System.Drawing.Point(453, 31);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(195, 75);
             this.panel4.TabIndex = 5;
@@ -231,7 +181,7 @@ namespace ProyectVisualFerre
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(214, 140);
+            this.panel3.Location = new System.Drawing.Point(216, 28);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(195, 75);
             this.panel3.TabIndex = 4;
@@ -274,7 +224,7 @@ namespace ProyectVisualFerre
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(100, 31);
+            this.panel2.Location = new System.Drawing.Point(15, 28);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(195, 75);
             this.panel2.TabIndex = 3;
@@ -315,9 +265,9 @@ namespace ProyectVisualFerre
             // 
             this.panel7.Controls.Add(this.chart1);
             this.panel7.Controls.Add(this.label12);
-            this.panel7.Location = new System.Drawing.Point(436, 144);
+            this.panel7.Location = new System.Drawing.Point(41, 301);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(325, 375);
+            this.panel7.Size = new System.Drawing.Size(388, 357);
             this.panel7.TabIndex = 3;
             // 
             // chart1
@@ -327,13 +277,13 @@ namespace ProyectVisualFerre
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(16, 68);
+            this.chart1.Location = new System.Drawing.Point(15, 91);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(300, 286);
+            this.chart1.Size = new System.Drawing.Size(300, 249);
             this.chart1.TabIndex = 5;
             this.chart1.Text = "chart1";
             // 
@@ -353,7 +303,7 @@ namespace ProyectVisualFerre
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(780, 570);
+            this.ClientSize = new System.Drawing.Size(980, 670);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
@@ -364,9 +314,6 @@ namespace ProyectVisualFerre
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -396,10 +343,6 @@ namespace ProyectVisualFerre
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox3;

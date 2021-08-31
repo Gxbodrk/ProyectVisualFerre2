@@ -44,9 +44,9 @@ namespace ProyectVisualFerre
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(292, 50);
+            this.pictureBox1.Location = new System.Drawing.Point(372, 57);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(219, 139);
+            this.pictureBox1.Size = new System.Drawing.Size(240, 154);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -54,9 +54,9 @@ namespace ProyectVisualFerre
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(195, 195);
+            this.pictureBox2.Location = new System.Drawing.Point(275, 202);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(400, 63);
+            this.pictureBox2.Size = new System.Drawing.Size(421, 78);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -65,7 +65,7 @@ namespace ProyectVisualFerre
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(217, 261);
+            this.label1.Location = new System.Drawing.Point(316, 283);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(363, 47);
             this.label1.TabIndex = 2;
@@ -76,7 +76,7 @@ namespace ProyectVisualFerre
             this.lbl_hora.AutoSize = true;
             this.lbl_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_hora.ForeColor = System.Drawing.Color.White;
-            this.lbl_hora.Location = new System.Drawing.Point(234, 344);
+            this.lbl_hora.Location = new System.Drawing.Point(290, 410);
             this.lbl_hora.Name = "lbl_hora";
             this.lbl_hora.Size = new System.Drawing.Size(0, 91);
             this.lbl_hora.TabIndex = 3;
@@ -86,7 +86,7 @@ namespace ProyectVisualFerre
             this.lbl_fecha.AutoSize = true;
             this.lbl_fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_fecha.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.lbl_fecha.Location = new System.Drawing.Point(242, 435);
+            this.lbl_fecha.Location = new System.Drawing.Point(298, 501);
             this.lbl_fecha.Name = "lbl_fecha";
             this.lbl_fecha.Size = new System.Drawing.Size(0, 46);
             this.lbl_fecha.TabIndex = 4;
@@ -102,7 +102,7 @@ namespace ProyectVisualFerre
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(780, 570);
+            this.ClientSize = new System.Drawing.Size(980, 670);
             this.Controls.Add(this.lbl_fecha);
             this.Controls.Add(this.lbl_hora);
             this.Controls.Add(this.label1);
